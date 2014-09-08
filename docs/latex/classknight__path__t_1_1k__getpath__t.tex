@@ -1,0 +1,81 @@
+\hypertarget{classknight__path__t_1_1k__getpath__t}{\section{knight\-\_\-path\-\_\-t\-:\-:k\-\_\-getpath\-\_\-t \-Class \-Reference}
+\label{classknight__path__t_1_1k__getpath__t}\index{knight\-\_\-path\-\_\-t\-::k\-\_\-getpath\-\_\-t@{knight\-\_\-path\-\_\-t\-::k\-\_\-getpath\-\_\-t}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classknight__path__t_1_1k__getpath__t_a26486e63b83972a775a2a7de222d7728}{k\-\_\-getpath\-\_\-t} ()
+\item 
+void \hyperlink{classknight__path__t_1_1k__getpath__t_a79d58451308ea02d2145880569492823}{load\-\_\-all\-\_\-para} ()
+\item 
+bool \hyperlink{classknight__path__t_1_1k__getpath__t_ad8fa968e1f9e37e437cf6d17a4565156}{get\-\_\-path} (int maxx, int maxy, int sx, int sy, int ex, int ey, std\-::vector$<$ \hyperlink{structknight__path__t_1_1node__t}{node\-\_\-t} $>$ \&node\-\_\-list)
+\item 
+bool \hyperlink{classknight__path__t_1_1k__getpath__t_a30ab610afec6be8daf3a429a7b04b45f}{get\-\_\-path} (int maxx, int maxy, int sx, int sy, int ex, int ey, \hyperlink{structknight__path__t_1_1tour__path__t}{tour\-\_\-path\-\_\-t} \&tp)
+\item 
+\hypertarget{classknight__path__t_1_1k__getpath__t_ac7ff8402fa242ffa7b8ff9a240dd63d9}{bool {\bfseries test\-\_\-all\-\_\-paths} ()}\label{classknight__path__t_1_1k__getpath__t_ac7ff8402fa242ffa7b8ff9a240dd63d9}
+
+\item 
+\hypertarget{classknight__path__t_1_1k__getpath__t_acc0dd4021350e10e07cb7d5086e72bfb}{bool {\bfseries test\-\_\-paths\-\_\-for\-\_\-board} (int maxx, int maxy, bool allow\-\_\-same\-\_\-color=false)}\label{classknight__path__t_1_1k__getpath__t_acc0dd4021350e10e07cb7d5086e72bfb}
+
+\item 
+\hypertarget{classknight__path__t_1_1k__getpath__t_a539cfd28369ede5d708f8121ac6aef0e}{void {\bfseries print\-\_\-tour\-\_\-path} (\hyperlink{namespaceknight__path__t_a9e0a15a5d1f3d40a7ad5fe101905764a}{tour\-\_\-path\-\_\-list\-\_\-t} const \&pl)}\label{classknight__path__t_1_1k__getpath__t_a539cfd28369ede5d708f8121ac6aef0e}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classknight__path__t_1_1k__getpath__t_a26486e63b83972a775a2a7de222d7728}{\index{knight\-\_\-path\-\_\-t\-::k\-\_\-getpath\-\_\-t@{knight\-\_\-path\-\_\-t\-::k\-\_\-getpath\-\_\-t}!k\-\_\-getpath\-\_\-t@{k\-\_\-getpath\-\_\-t}}
+\index{k\-\_\-getpath\-\_\-t@{k\-\_\-getpath\-\_\-t}!knight_path_t::k_getpath_t@{knight\-\_\-path\-\_\-t\-::k\-\_\-getpath\-\_\-t}}
+\subsubsection[{k\-\_\-getpath\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}{\bf knight\-\_\-path\-\_\-t\-::k\-\_\-getpath\-\_\-t\-::k\-\_\-getpath\-\_\-t} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classknight__path__t_1_1k__getpath__t_a26486e63b83972a775a2a7de222d7728}
+\-Set paths to pre-\/computed paths 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classknight__path__t_1_1k__getpath__t_ad8fa968e1f9e37e437cf6d17a4565156}{\index{knight\-\_\-path\-\_\-t\-::k\-\_\-getpath\-\_\-t@{knight\-\_\-path\-\_\-t\-::k\-\_\-getpath\-\_\-t}!get\-\_\-path@{get\-\_\-path}}
+\index{get\-\_\-path@{get\-\_\-path}!knight_path_t::k_getpath_t@{knight\-\_\-path\-\_\-t\-::k\-\_\-getpath\-\_\-t}}
+\subsubsection[{get\-\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf knight\-\_\-path\-\_\-t\-::k\-\_\-getpath\-\_\-t\-::get\-\_\-path} (
+\begin{DoxyParamCaption}
+\item[{int}]{maxx, }
+\item[{int}]{maxy, }
+\item[{int}]{sx, }
+\item[{int}]{sy, }
+\item[{int}]{ex, }
+\item[{int}]{ey, }
+\item[{std\-::vector$<$ {\bf node\-\_\-t} $>$ \&}]{node\-\_\-list}
+\end{DoxyParamCaption}
+)}}\label{classknight__path__t_1_1k__getpath__t_ad8fa968e1f9e37e437cf6d17a4565156}
+\-Searches and returns a path on board of size (maxx, maxy) from given start-\/end location. \-Provides the path as a vector of nodes. \begin{DoxyReturn}{\-Returns}
+false if failed, else returns true 
+\end{DoxyReturn}
+\hypertarget{classknight__path__t_1_1k__getpath__t_a30ab610afec6be8daf3a429a7b04b45f}{\index{knight\-\_\-path\-\_\-t\-::k\-\_\-getpath\-\_\-t@{knight\-\_\-path\-\_\-t\-::k\-\_\-getpath\-\_\-t}!get\-\_\-path@{get\-\_\-path}}
+\index{get\-\_\-path@{get\-\_\-path}!knight_path_t::k_getpath_t@{knight\-\_\-path\-\_\-t\-::k\-\_\-getpath\-\_\-t}}
+\subsubsection[{get\-\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf k\-\_\-getpath\-\_\-t\-::get\-\_\-path} (
+\begin{DoxyParamCaption}
+\item[{int}]{maxx, }
+\item[{int}]{maxy, }
+\item[{int}]{sx, }
+\item[{int}]{sy, }
+\item[{int}]{ex, }
+\item[{int}]{ey, }
+\item[{{\bf tour\-\_\-path\-\_\-t} \&}]{tp}
+\end{DoxyParamCaption}
+)}}\label{classknight__path__t_1_1k__getpath__t_a30ab610afec6be8daf3a429a7b04b45f}
+\-Searches and returns a path on board of size (maxx, maxy) from given start-\/end location. \-Provides the path as a \hyperlink{structknight__path__t_1_1tour__path__t}{tour\-\_\-path\-\_\-t}. \begin{DoxyReturn}{\-Returns}
+false if failed, else returns true
+\end{DoxyReturn}
+\-Checks maxx, maxy to determine which database to look for path. \-Checks maxx, maxy to determine which database to look for path. \hypertarget{classknight__path__t_1_1k__getpath__t_a79d58451308ea02d2145880569492823}{\index{knight\-\_\-path\-\_\-t\-::k\-\_\-getpath\-\_\-t@{knight\-\_\-path\-\_\-t\-::k\-\_\-getpath\-\_\-t}!load\-\_\-all\-\_\-para@{load\-\_\-all\-\_\-para}}
+\index{load\-\_\-all\-\_\-para@{load\-\_\-all\-\_\-para}!knight_path_t::k_getpath_t@{knight\-\_\-path\-\_\-t\-::k\-\_\-getpath\-\_\-t}}
+\subsubsection[{load\-\_\-all\-\_\-para}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf knight\-\_\-path\-\_\-t\-::k\-\_\-getpath\-\_\-t\-::load\-\_\-all\-\_\-para} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classknight__path__t_1_1k__getpath__t_a79d58451308ea02d2145880569492823}
+\-Load the pre-\/computed parameter files 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+k\-\_\-getpath.\-H\item 
+k\-\_\-getpath.\-C\end{DoxyCompactItemize}

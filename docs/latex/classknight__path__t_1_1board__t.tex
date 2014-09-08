@@ -1,0 +1,178 @@
+\hypertarget{classknight__path__t_1_1board__t}{\section{knight\-\_\-path\-\_\-t\-:\-:board\-\_\-t \-Class \-Reference}
+\label{classknight__path__t_1_1board__t}\index{knight\-\_\-path\-\_\-t\-::board\-\_\-t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}}
+}
+
+
+{\ttfamily \#include $<$board.\-H$>$}
+
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classknight__path__t_1_1board__t_a23079906cb89269c288689b4d95f9793}{display\-\_\-board} ()
+\item 
+void \hyperlink{classknight__path__t_1_1board__t_a6bd6eb1e0433e2ce3082eb4305fe252b}{display\-\_\-move} (\hyperlink{structknight__path__t_1_1cell__ind__t}{cell\-\_\-ind\-\_\-t} const \&move\-\_\-)
+\item 
+void \hyperlink{classknight__path__t_1_1board__t_ac7b3bc7fb3021a8db5ade95779b831ba}{display\-\_\-path} (path\-\_\-t const \&moves\-\_\-)
+\item 
+void \hyperlink{classknight__path__t_1_1board__t_a09090861cc5b6662ed419bf9c26f5828}{set\-\_\-teleport\-\_\-cells} (int teleport\-\_\-xi\-\_\-\mbox{[}$\,$\mbox{]}, int teleport\-\_\-yi\-\_\-\mbox{[}$\,$\mbox{]})
+\item 
+\hyperlink{classknight__path__t_1_1board__t_a60bcd19456f29df0ece7e1c44899927b}{board\-\_\-t} (int dim\-\_\-size\-\_\-)
+\item 
+void \hyperlink{classknight__path__t_1_1board__t_afa5671cd678fdb5fc1d0cdc18f948c47}{reset} (int value\-\_\-)
+\item 
+bool \hyperlink{classknight__path__t_1_1board__t_ae823e0e0e3f5ad86f06e93c801d397ca}{on\-\_\-board} (\hyperlink{structknight__path__t_1_1cell__ind__t}{cell\-\_\-ind\-\_\-t} const cell\-\_\-)
+\item 
+int \hyperlink{classknight__path__t_1_1board__t_a419dcfbebef7aa7c3323fa617f6471e7}{value} (int xi, int yi)
+\item 
+void \hyperlink{classknight__path__t_1_1board__t_a87c70e59faa630a8e71080f5b89939be}{set} (int xi, int yi, int \hyperlink{classknight__path__t_1_1board__t_a419dcfbebef7aa7c3323fa617f6471e7}{value}, int parent\-\_\-xi=-\/1, int parent\-\_\-yi=-\/1)
+\item 
+\hyperlink{structknight__path__t_1_1cell__t}{cell\-\_\-t} \& \hyperlink{classknight__path__t_1_1board__t_aab347f7c288d225d586df3199c76da48}{get} (int xi, int yi)
+\item 
+std\-::vector$<$ int $>$ const \& \hyperlink{classknight__path__t_1_1board__t_a87c807b5c36126f7d94ac1b26cea35cd}{get\-\_\-teleport\-\_\-x} ()
+\item 
+std\-::vector$<$ int $>$ const \& \hyperlink{classknight__path__t_1_1board__t_a40fb60235f4416d8f8215bbc3611a30d}{get\-\_\-teleport\-\_\-y} ()
+\item 
+bool \hyperlink{classknight__path__t_1_1board__t_a1522ebb77be2ffd6a6e5975177769b67}{knight\-\_\-neighbor} (\hyperlink{structknight__path__t_1_1cell__ind__t}{cell\-\_\-ind\-\_\-t} const \&c1, \hyperlink{structknight__path__t_1_1cell__ind__t}{cell\-\_\-ind\-\_\-t} const \&c2)
+\item 
+bool \hyperlink{classknight__path__t_1_1board__t_a29e73f2b8e995523f3a75ea47f043e7d}{teleport\-\_\-points} (\hyperlink{structknight__path__t_1_1cell__ind__t}{cell\-\_\-ind\-\_\-t} const \&c1, \hyperlink{structknight__path__t_1_1cell__ind__t}{cell\-\_\-ind\-\_\-t} const \&c2)
+\item 
+bool \hyperlink{classknight__path__t_1_1board__t_a43c81209ea3d042a8ff0d05e47d45d41}{check\-\_\-valid\-\_\-path} (path\-\_\-t const \&path\-\_\-, bool display\-\_\-)
+\item 
+\hypertarget{classknight__path__t_1_1board__t_adefbaaacef6c63eac325d574e586ebe8}{void {\bfseries mark\-\_\-board} (std\-::vector$<$ int $>$ const \&pos\-\_\-list)}\label{classknight__path__t_1_1board__t_adefbaaacef6c63eac325d574e586ebe8}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Class to contain check board configuration. \-It is initialized with \-D\-I\-M\-\_\-\-S\-I\-Z\-E, size of the chess board in one dimension. 
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classknight__path__t_1_1board__t_a60bcd19456f29df0ece7e1c44899927b}{\index{knight\-\_\-path\-\_\-t\-::board\-\_\-t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}!board\-\_\-t@{board\-\_\-t}}
+\index{board\-\_\-t@{board\-\_\-t}!knight_path_t::board_t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}}
+\subsubsection[{board\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}{\bf knight\-\_\-path\-\_\-t\-::board\-\_\-t\-::board\-\_\-t} (
+\begin{DoxyParamCaption}
+\item[{int}]{dim\-\_\-size\-\_\-}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classknight__path__t_1_1board__t_a60bcd19456f29df0ece7e1c44899927b}
+
+\begin{DoxyParams}{\-Parameters}
+{\em dim\-\_\-size\-\_\-,\-:} & dimension of the board \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classknight__path__t_1_1board__t_a43c81209ea3d042a8ff0d05e47d45d41}{\index{knight\-\_\-path\-\_\-t\-::board\-\_\-t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}!check\-\_\-valid\-\_\-path@{check\-\_\-valid\-\_\-path}}
+\index{check\-\_\-valid\-\_\-path@{check\-\_\-valid\-\_\-path}!knight_path_t::board_t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}}
+\subsubsection[{check\-\_\-valid\-\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf board\-\_\-t\-::check\-\_\-valid\-\_\-path} (
+\begin{DoxyParamCaption}
+\item[{path\-\_\-t const \&}]{path\-\_\-, }
+\item[{bool}]{display\-\_\-}
+\end{DoxyParamCaption}
+)}}\label{classknight__path__t_1_1board__t_a43c81209ea3d042a8ff0d05e47d45d41}
+\-Returns true if sequence of points in path is valid knight moves and falls within the board. \hypertarget{classknight__path__t_1_1board__t_a23079906cb89269c288689b4d95f9793}{\index{knight\-\_\-path\-\_\-t\-::board\-\_\-t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}!display\-\_\-board@{display\-\_\-board}}
+\index{display\-\_\-board@{display\-\_\-board}!knight_path_t::board_t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}}
+\subsubsection[{display\-\_\-board}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf board\-\_\-t\-::display\-\_\-board} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classknight__path__t_1_1board__t_a23079906cb89269c288689b4d95f9793}
+\-Display board \hypertarget{classknight__path__t_1_1board__t_a6bd6eb1e0433e2ce3082eb4305fe252b}{\index{knight\-\_\-path\-\_\-t\-::board\-\_\-t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}!display\-\_\-move@{display\-\_\-move}}
+\index{display\-\_\-move@{display\-\_\-move}!knight_path_t::board_t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}}
+\subsubsection[{display\-\_\-move}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf board\-\_\-t\-::display\-\_\-move} (
+\begin{DoxyParamCaption}
+\item[{{\bf cell\-\_\-ind\-\_\-t} const \&}]{move\-\_\-}
+\end{DoxyParamCaption}
+)}}\label{classknight__path__t_1_1board__t_a6bd6eb1e0433e2ce3082eb4305fe252b}
+\-Display board with given move marked on it \hypertarget{classknight__path__t_1_1board__t_ac7b3bc7fb3021a8db5ade95779b831ba}{\index{knight\-\_\-path\-\_\-t\-::board\-\_\-t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}!display\-\_\-path@{display\-\_\-path}}
+\index{display\-\_\-path@{display\-\_\-path}!knight_path_t::board_t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}}
+\subsubsection[{display\-\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf board\-\_\-t\-::display\-\_\-path} (
+\begin{DoxyParamCaption}
+\item[{path\-\_\-t const \&}]{moves\-\_\-}
+\end{DoxyParamCaption}
+)}}\label{classknight__path__t_1_1board__t_ac7b3bc7fb3021a8db5ade95779b831ba}
+\-Display the board for each move \hypertarget{classknight__path__t_1_1board__t_aab347f7c288d225d586df3199c76da48}{\index{knight\-\_\-path\-\_\-t\-::board\-\_\-t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}!get@{get}}
+\index{get@{get}!knight_path_t::board_t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}}
+\subsubsection[{get}]{\setlength{\rightskip}{0pt plus 5cm}{\bf cell\-\_\-t}\& {\bf knight\-\_\-path\-\_\-t\-::board\-\_\-t\-::get} (
+\begin{DoxyParamCaption}
+\item[{int}]{xi, }
+\item[{int}]{yi}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classknight__path__t_1_1board__t_aab347f7c288d225d586df3199c76da48}
+\-Returns reference to the cell at (xi, yi) \hypertarget{classknight__path__t_1_1board__t_a87c807b5c36126f7d94ac1b26cea35cd}{\index{knight\-\_\-path\-\_\-t\-::board\-\_\-t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}!get\-\_\-teleport\-\_\-x@{get\-\_\-teleport\-\_\-x}}
+\index{get\-\_\-teleport\-\_\-x@{get\-\_\-teleport\-\_\-x}!knight_path_t::board_t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}}
+\subsubsection[{get\-\_\-teleport\-\_\-x}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$ const\& {\bf knight\-\_\-path\-\_\-t\-::board\-\_\-t\-::get\-\_\-teleport\-\_\-x} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classknight__path__t_1_1board__t_a87c807b5c36126f7d94ac1b26cea35cd}
+\-Returns constant reference to vector of x coordinates of teleport cells. \hypertarget{classknight__path__t_1_1board__t_a40fb60235f4416d8f8215bbc3611a30d}{\index{knight\-\_\-path\-\_\-t\-::board\-\_\-t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}!get\-\_\-teleport\-\_\-y@{get\-\_\-teleport\-\_\-y}}
+\index{get\-\_\-teleport\-\_\-y@{get\-\_\-teleport\-\_\-y}!knight_path_t::board_t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}}
+\subsubsection[{get\-\_\-teleport\-\_\-y}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$int$>$ const\& {\bf knight\-\_\-path\-\_\-t\-::board\-\_\-t\-::get\-\_\-teleport\-\_\-y} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classknight__path__t_1_1board__t_a40fb60235f4416d8f8215bbc3611a30d}
+\-Returns constant reference to vector of y coordinates of teleport cells. \hypertarget{classknight__path__t_1_1board__t_a1522ebb77be2ffd6a6e5975177769b67}{\index{knight\-\_\-path\-\_\-t\-::board\-\_\-t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}!knight\-\_\-neighbor@{knight\-\_\-neighbor}}
+\index{knight\-\_\-neighbor@{knight\-\_\-neighbor}!knight_path_t::board_t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}}
+\subsubsection[{knight\-\_\-neighbor}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf knight\-\_\-path\-\_\-t\-::board\-\_\-t\-::knight\-\_\-neighbor} (
+\begin{DoxyParamCaption}
+\item[{{\bf cell\-\_\-ind\-\_\-t} const \&}]{c1, }
+\item[{{\bf cell\-\_\-ind\-\_\-t} const \&}]{c2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classknight__path__t_1_1board__t_a1522ebb77be2ffd6a6e5975177769b67}
+\-Checks if the pair of given cells are one knight step away. \hypertarget{classknight__path__t_1_1board__t_ae823e0e0e3f5ad86f06e93c801d397ca}{\index{knight\-\_\-path\-\_\-t\-::board\-\_\-t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}!on\-\_\-board@{on\-\_\-board}}
+\index{on\-\_\-board@{on\-\_\-board}!knight_path_t::board_t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}}
+\subsubsection[{on\-\_\-board}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf knight\-\_\-path\-\_\-t\-::board\-\_\-t\-::on\-\_\-board} (
+\begin{DoxyParamCaption}
+\item[{{\bf cell\-\_\-ind\-\_\-t} const}]{cell\-\_\-}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classknight__path__t_1_1board__t_ae823e0e0e3f5ad86f06e93c801d397ca}
+\-Returns true if the given cell falls within the board \hypertarget{classknight__path__t_1_1board__t_afa5671cd678fdb5fc1d0cdc18f948c47}{\index{knight\-\_\-path\-\_\-t\-::board\-\_\-t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}!reset@{reset}}
+\index{reset@{reset}!knight_path_t::board_t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf board\-\_\-t\-::reset} (
+\begin{DoxyParamCaption}
+\item[{int}]{value\-\_\-}
+\end{DoxyParamCaption}
+)}}\label{classknight__path__t_1_1board__t_afa5671cd678fdb5fc1d0cdc18f948c47}
+\-Resets all the cells on the board with given value \hypertarget{classknight__path__t_1_1board__t_a87c70e59faa630a8e71080f5b89939be}{\index{knight\-\_\-path\-\_\-t\-::board\-\_\-t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}!set@{set}}
+\index{set@{set}!knight_path_t::board_t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}}
+\subsubsection[{set}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf knight\-\_\-path\-\_\-t\-::board\-\_\-t\-::set} (
+\begin{DoxyParamCaption}
+\item[{int}]{xi, }
+\item[{int}]{yi, }
+\item[{int}]{value, }
+\item[{int}]{parent\-\_\-xi = {\ttfamily -\/1}, }
+\item[{int}]{parent\-\_\-yi = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classknight__path__t_1_1board__t_a87c70e59faa630a8e71080f5b89939be}
+\-Sets the value and parent node for given cell \hypertarget{classknight__path__t_1_1board__t_a09090861cc5b6662ed419bf9c26f5828}{\index{knight\-\_\-path\-\_\-t\-::board\-\_\-t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}!set\-\_\-teleport\-\_\-cells@{set\-\_\-teleport\-\_\-cells}}
+\index{set\-\_\-teleport\-\_\-cells@{set\-\_\-teleport\-\_\-cells}!knight_path_t::board_t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}}
+\subsubsection[{set\-\_\-teleport\-\_\-cells}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf board\-\_\-t\-::set\-\_\-teleport\-\_\-cells} (
+\begin{DoxyParamCaption}
+\item[{int}]{teleport\-\_\-xi\-\_\-\mbox{[}$\,$\mbox{]}, }
+\item[{int}]{teleport\-\_\-yi\-\_\-\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{classknight__path__t_1_1board__t_a09090861cc5b6662ed419bf9c26f5828}
+\-Sets given arra of points as teleport cells \hypertarget{classknight__path__t_1_1board__t_a29e73f2b8e995523f3a75ea47f043e7d}{\index{knight\-\_\-path\-\_\-t\-::board\-\_\-t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}!teleport\-\_\-points@{teleport\-\_\-points}}
+\index{teleport\-\_\-points@{teleport\-\_\-points}!knight_path_t::board_t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}}
+\subsubsection[{teleport\-\_\-points}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf knight\-\_\-path\-\_\-t\-::board\-\_\-t\-::teleport\-\_\-points} (
+\begin{DoxyParamCaption}
+\item[{{\bf cell\-\_\-ind\-\_\-t} const \&}]{c1, }
+\item[{{\bf cell\-\_\-ind\-\_\-t} const \&}]{c2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classknight__path__t_1_1board__t_a29e73f2b8e995523f3a75ea47f043e7d}
+\-Return true if points c1, c2 are both teleport points \hypertarget{classknight__path__t_1_1board__t_a419dcfbebef7aa7c3323fa617f6471e7}{\index{knight\-\_\-path\-\_\-t\-::board\-\_\-t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}!value@{value}}
+\index{value@{value}!knight_path_t::board_t@{knight\-\_\-path\-\_\-t\-::board\-\_\-t}}
+\subsubsection[{value}]{\setlength{\rightskip}{0pt plus 5cm}int {\bf knight\-\_\-path\-\_\-t\-::board\-\_\-t\-::value} (
+\begin{DoxyParamCaption}
+\item[{int}]{xi, }
+\item[{int}]{yi}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classknight__path__t_1_1board__t_a419dcfbebef7aa7c3323fa617f6471e7}
+\-Returns the value of the given cell (xi, yi) 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+board.\-H\item 
+board.\-C\end{DoxyCompactItemize}

@@ -1,0 +1,95 @@
+\hypertarget{classknight__path__t_1_1solution__t}{\section{knight\-\_\-path\-\_\-t\-:\-:solution\-\_\-t \-Class \-Reference}
+\label{classknight__path__t_1_1solution__t}\index{knight\-\_\-path\-\_\-t\-::solution\-\_\-t@{knight\-\_\-path\-\_\-t\-::solution\-\_\-t}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classknight__path__t_1_1solution__t_ab72a2b74c697bdc5bde229af6b67f7b6}{solution\-\_\-t} (int dim\-\_\-size\-\_\-x, int dim\-\_\-size\-\_\-y)
+\item 
+void \hyperlink{classknight__path__t_1_1solution__t_a89b4b26cefee7c77b36f4139d076d754}{display\-\_\-board} ()
+\item 
+bool \hyperlink{classknight__path__t_1_1solution__t_a74ab0034e648209c8c61a49d289eecb7}{get\-\_\-start\-\_\-index} (int \&xi, int \&yi) const 
+\item 
+bool \hyperlink{classknight__path__t_1_1solution__t_ab9dbb7f757fd2340fc1b80f1973fd331}{get\-\_\-end\-\_\-index} (int \&xi, int \&yi) const 
+\item 
+bool \hyperlink{classknight__path__t_1_1solution__t_ab00e34ab2528fb5f334a6fc18f85772c}{search\-\_\-for} (int val, int \&xi, int \&yi) const 
+\item 
+void \hyperlink{classknight__path__t_1_1solution__t_abfeb409f624c316effbb21667a8b09ba}{reset} (int value)
+\item 
+\hypertarget{classknight__path__t_1_1solution__t_ac3c6586ec666957408b355ce7ef25694}{{\bfseries solution\-\_\-t} (\hyperlink{classknight__path__t_1_1solution__t}{solution\-\_\-t} const \&)}\label{classknight__path__t_1_1solution__t_ac3c6586ec666957408b355ce7ef25694}
+
+\item 
+\hypertarget{classknight__path__t_1_1solution__t_ac5c5f067d13b1ea830e458ecd07a3036}{void {\bfseries operator=} (\hyperlink{classknight__path__t_1_1solution__t}{solution\-\_\-t} const \&)}\label{classknight__path__t_1_1solution__t_ac5c5f067d13b1ea830e458ecd07a3036}
+
+\end{DoxyCompactItemize}
+\subsection*{\-Public \-Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classknight__path__t_1_1solution__t_a3fc2b81a3c3aefbb5feeb0a4721efef6}{const int \hyperlink{classknight__path__t_1_1solution__t_a3fc2b81a3c3aefbb5feeb0a4721efef6}{\-D\-I\-M\-\_\-\-S\-I\-Z\-E\-\_\-\-X}}\label{classknight__path__t_1_1solution__t_a3fc2b81a3c3aefbb5feeb0a4721efef6}
+
+\begin{DoxyCompactList}\small\item\em dimensions along either axis \end{DoxyCompactList}\item 
+\hypertarget{classknight__path__t_1_1solution__t_aebf6768d7bb096993a9990e2459c6c86}{const int {\bfseries \-D\-I\-M\-\_\-\-S\-I\-Z\-E\-\_\-\-Y}}\label{classknight__path__t_1_1solution__t_aebf6768d7bb096993a9990e2459c6c86}
+
+\item 
+\hypertarget{classknight__path__t_1_1solution__t_ad5e53ded325996aa993198670fa563b5}{int $\ast$$\ast$ \hyperlink{classknight__path__t_1_1solution__t_ad5e53ded325996aa993198670fa563b5}{m\-\_\-values}}\label{classknight__path__t_1_1solution__t_ad5e53ded325996aa993198670fa563b5}
+
+\begin{DoxyCompactList}\small\item\em \-Varaible to hold (cost) values of each cell. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classknight__path__t_1_1solution__t_ab72a2b74c697bdc5bde229af6b67f7b6}{\index{knight\-\_\-path\-\_\-t\-::solution\-\_\-t@{knight\-\_\-path\-\_\-t\-::solution\-\_\-t}!solution\-\_\-t@{solution\-\_\-t}}
+\index{solution\-\_\-t@{solution\-\_\-t}!knight_path_t::solution_t@{knight\-\_\-path\-\_\-t\-::solution\-\_\-t}}
+\subsubsection[{solution\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}{\bf knight\-\_\-path\-\_\-t\-::solution\-\_\-t\-::solution\-\_\-t} (
+\begin{DoxyParamCaption}
+\item[{int}]{dim\-\_\-size\-\_\-x, }
+\item[{int}]{dim\-\_\-size\-\_\-y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classknight__path__t_1_1solution__t_ab72a2b74c697bdc5bde229af6b67f7b6}
+\-Allocates memory for 2\-D array, which is delete in destructor 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classknight__path__t_1_1solution__t_a89b4b26cefee7c77b36f4139d076d754}{\index{knight\-\_\-path\-\_\-t\-::solution\-\_\-t@{knight\-\_\-path\-\_\-t\-::solution\-\_\-t}!display\-\_\-board@{display\-\_\-board}}
+\index{display\-\_\-board@{display\-\_\-board}!knight_path_t::solution_t@{knight\-\_\-path\-\_\-t\-::solution\-\_\-t}}
+\subsubsection[{display\-\_\-board}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf solution\-\_\-t\-::display\-\_\-board} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classknight__path__t_1_1solution__t_a89b4b26cefee7c77b36f4139d076d754}
+\-A utility function to print cost values of the grid's cells \hypertarget{classknight__path__t_1_1solution__t_ab9dbb7f757fd2340fc1b80f1973fd331}{\index{knight\-\_\-path\-\_\-t\-::solution\-\_\-t@{knight\-\_\-path\-\_\-t\-::solution\-\_\-t}!get\-\_\-end\-\_\-index@{get\-\_\-end\-\_\-index}}
+\index{get\-\_\-end\-\_\-index@{get\-\_\-end\-\_\-index}!knight_path_t::solution_t@{knight\-\_\-path\-\_\-t\-::solution\-\_\-t}}
+\subsubsection[{get\-\_\-end\-\_\-index}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf solution\-\_\-t\-::get\-\_\-end\-\_\-index} (
+\begin{DoxyParamCaption}
+\item[{int \&}]{xi, }
+\item[{int \&}]{yi}
+\end{DoxyParamCaption}
+) const}}\label{classknight__path__t_1_1solution__t_ab9dbb7f757fd2340fc1b80f1973fd331}
+\-Returns x, y index of cell where solution ends \hypertarget{classknight__path__t_1_1solution__t_a74ab0034e648209c8c61a49d289eecb7}{\index{knight\-\_\-path\-\_\-t\-::solution\-\_\-t@{knight\-\_\-path\-\_\-t\-::solution\-\_\-t}!get\-\_\-start\-\_\-index@{get\-\_\-start\-\_\-index}}
+\index{get\-\_\-start\-\_\-index@{get\-\_\-start\-\_\-index}!knight_path_t::solution_t@{knight\-\_\-path\-\_\-t\-::solution\-\_\-t}}
+\subsubsection[{get\-\_\-start\-\_\-index}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf solution\-\_\-t\-::get\-\_\-start\-\_\-index} (
+\begin{DoxyParamCaption}
+\item[{int \&}]{xi, }
+\item[{int \&}]{yi}
+\end{DoxyParamCaption}
+) const}}\label{classknight__path__t_1_1solution__t_a74ab0034e648209c8c61a49d289eecb7}
+\-Returns x, y index of cell where solution starts \hypertarget{classknight__path__t_1_1solution__t_abfeb409f624c316effbb21667a8b09ba}{\index{knight\-\_\-path\-\_\-t\-::solution\-\_\-t@{knight\-\_\-path\-\_\-t\-::solution\-\_\-t}!reset@{reset}}
+\index{reset@{reset}!knight_path_t::solution_t@{knight\-\_\-path\-\_\-t\-::solution\-\_\-t}}
+\subsubsection[{reset}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf solution\-\_\-t\-::reset} (
+\begin{DoxyParamCaption}
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}}\label{classknight__path__t_1_1solution__t_abfeb409f624c316effbb21667a8b09ba}
+\-Reset all the nodes/cells to given value \hypertarget{classknight__path__t_1_1solution__t_ab00e34ab2528fb5f334a6fc18f85772c}{\index{knight\-\_\-path\-\_\-t\-::solution\-\_\-t@{knight\-\_\-path\-\_\-t\-::solution\-\_\-t}!search\-\_\-for@{search\-\_\-for}}
+\index{search\-\_\-for@{search\-\_\-for}!knight_path_t::solution_t@{knight\-\_\-path\-\_\-t\-::solution\-\_\-t}}
+\subsubsection[{search\-\_\-for}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf solution\-\_\-t\-::search\-\_\-for} (
+\begin{DoxyParamCaption}
+\item[{int}]{val, }
+\item[{int \&}]{xi, }
+\item[{int \&}]{yi}
+\end{DoxyParamCaption}
+) const}}\label{classknight__path__t_1_1solution__t_ab00e34ab2528fb5f334a6fc18f85772c}
+\-Searches for given coordinates (x,y) of node with given (val). \-Function returns false if could not find the node. \-Else return true. 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+k\-\_\-tour.\-H\item 
+k\-\_\-tour.\-C\end{DoxyCompactItemize}

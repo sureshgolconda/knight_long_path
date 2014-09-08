@@ -1,0 +1,51 @@
+\hypertarget{classknight__path__t_1_1k__path__adapter__t}{\section{knight\-\_\-path\-\_\-t\-:\-:k\-\_\-path\-\_\-adapter\-\_\-t \-Class \-Reference}
+\label{classknight__path__t_1_1k__path__adapter__t}\index{knight\-\_\-path\-\_\-t\-::k\-\_\-path\-\_\-adapter\-\_\-t@{knight\-\_\-path\-\_\-t\-::k\-\_\-path\-\_\-adapter\-\_\-t}}
+}
+\subsection*{\-Public \-Member \-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classknight__path__t_1_1k__path__adapter__t_a5db7eb3095a19038ab80dcfc5bded2f6}{k\-\_\-path\-\_\-adapter\-\_\-t} (bool use\-\_\-db)
+\item 
+bool \hyperlink{classknight__path__t_1_1k__path__adapter__t_ae6759eed95c064759e39b5bcd9d9bb4f}{get\-\_\-path} (int maxx, int maxy, int sx, int sy, int ex, int ey, std\-::vector$<$ \hyperlink{structknight__path__t_1_1node__t}{node\-\_\-t} $>$ \&path)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Constructor \& \-Destructor \-Documentation}
+\hypertarget{classknight__path__t_1_1k__path__adapter__t_a5db7eb3095a19038ab80dcfc5bded2f6}{\index{knight\-\_\-path\-\_\-t\-::k\-\_\-path\-\_\-adapter\-\_\-t@{knight\-\_\-path\-\_\-t\-::k\-\_\-path\-\_\-adapter\-\_\-t}!k\-\_\-path\-\_\-adapter\-\_\-t@{k\-\_\-path\-\_\-adapter\-\_\-t}}
+\index{k\-\_\-path\-\_\-adapter\-\_\-t@{k\-\_\-path\-\_\-adapter\-\_\-t}!knight_path_t::k_path_adapter_t@{knight\-\_\-path\-\_\-t\-::k\-\_\-path\-\_\-adapter\-\_\-t}}
+\subsubsection[{k\-\_\-path\-\_\-adapter\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}{\bf knight\-\_\-path\-\_\-t\-::k\-\_\-path\-\_\-adapter\-\_\-t\-::k\-\_\-path\-\_\-adapter\-\_\-t} (
+\begin{DoxyParamCaption}
+\item[{bool}]{use\-\_\-db}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily  \mbox{[}inline\mbox{]}}}}\label{classknight__path__t_1_1k__path__adapter__t_a5db7eb3095a19038ab80dcfc5bded2f6}
+\-Takes in one bool argument which specifies if to use pre-\/computed database (if true). 
+
+\subsection{\-Member \-Function \-Documentation}
+\hypertarget{classknight__path__t_1_1k__path__adapter__t_ae6759eed95c064759e39b5bcd9d9bb4f}{\index{knight\-\_\-path\-\_\-t\-::k\-\_\-path\-\_\-adapter\-\_\-t@{knight\-\_\-path\-\_\-t\-::k\-\_\-path\-\_\-adapter\-\_\-t}!get\-\_\-path@{get\-\_\-path}}
+\index{get\-\_\-path@{get\-\_\-path}!knight_path_t::k_path_adapter_t@{knight\-\_\-path\-\_\-t\-::k\-\_\-path\-\_\-adapter\-\_\-t}}
+\subsubsection[{get\-\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf k\-\_\-path\-\_\-adapter\-\_\-t\-::get\-\_\-path} (
+\begin{DoxyParamCaption}
+\item[{int}]{maxx, }
+\item[{int}]{maxy, }
+\item[{int}]{sx, }
+\item[{int}]{sy, }
+\item[{int}]{ex, }
+\item[{int}]{ey, }
+\item[{std\-::vector$<$ {\bf node\-\_\-t} $>$ \&}]{path}
+\end{DoxyParamCaption}
+)}}\label{classknight__path__t_1_1k__path__adapter__t_ae6759eed95c064759e39b5bcd9d9bb4f}
+\-Finds the path for given board of size (maxx, maxy), from given start point to given end point. \begin{DoxyReturn}{\-Returns}
+true if successful. \-Else return false 
+\end{DoxyReturn}
+\-Iterate the search with different limit values. \-Initial lower values provides a chance to search path from end to start, which showed quicker results sometimes.
+
+\-Get search limit
+
+\-If failed, try searching from end to start
+
+if reverse search found path, reverse the resultant path. 
+
+\-The documentation for this class was generated from the following files\-:\begin{DoxyCompactItemize}
+\item 
+k\-\_\-path\-\_\-adapter.\-H\item 
+k\-\_\-path\-\_\-adapter.\-C\end{DoxyCompactItemize}

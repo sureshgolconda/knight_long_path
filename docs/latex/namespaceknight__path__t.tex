@@ -1,0 +1,165 @@
+\hypertarget{namespaceknight__path__t}{\section{knight\-\_\-path\-\_\-t \-Namespace \-Reference}
+\label{namespaceknight__path__t}\index{knight\-\_\-path\-\_\-t@{knight\-\_\-path\-\_\-t}}
+}
+\subsection*{\-Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{classknight__path__t_1_1k__32__search__t}{k\-\_\-32\-\_\-search\-\_\-t}
+\item 
+class \hyperlink{classknight__path__t_1_1k__getpath__t}{k\-\_\-getpath\-\_\-t}
+\item 
+class \hyperlink{classknight__path__t_1_1k__path__adapter__t}{k\-\_\-path\-\_\-adapter\-\_\-t}
+\item 
+class \hyperlink{classknight__path__t_1_1k__searcher__t}{k\-\_\-searcher\-\_\-t}
+\item 
+class \hyperlink{classknight__path__t_1_1k__sub__board__t}{k\-\_\-sub\-\_\-board\-\_\-t}
+\item 
+struct \hyperlink{structknight__path__t_1_1sub__board__grid__t}{sub\-\_\-board\-\_\-grid\-\_\-t}
+\item 
+class \hyperlink{classknight__path__t_1_1solution__t}{solution\-\_\-t}
+\item 
+class \hyperlink{classknight__path__t_1_1k__tour__t}{k\-\_\-tour\-\_\-t}
+\begin{DoxyCompactList}\small\item\em \-This is tour\-\_\-t def. \end{DoxyCompactList}\item 
+struct \hyperlink{structknight__path__t_1_1parameters__t}{parameters\-\_\-t}
+\item 
+struct \hyperlink{structknight__path__t_1_1tour__path__t}{tour\-\_\-path\-\_\-t}
+\item 
+struct \hyperlink{structknight__path__t_1_1node__t}{node\-\_\-t}
+\begin{DoxyCompactList}\small\item\em \-A node on board. \end{DoxyCompactList}\item 
+struct \hyperlink{structknight__path__t_1_1node__pair__t}{node\-\_\-pair\-\_\-t}
+\begin{DoxyCompactList}\small\item\em pair of node, used mostly for representing start-\/end \end{DoxyCompactList}\item 
+struct \hyperlink{structknight__path__t_1_1stitch__t}{stitch\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{\-Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef std\-::vector$<$ \hyperlink{structknight__path__t_1_1parameters__t}{parameters\-\_\-t} $>$ \hyperlink{namespaceknight__path__t_a50060ec18677595e6da97bc413ddc016}{parameter\-\_\-list\-\_\-t}
+\item 
+\hypertarget{namespaceknight__path__t_a9e0a15a5d1f3d40a7ad5fe101905764a}{typedef std\-::vector$<$ \hyperlink{structknight__path__t_1_1tour__path__t}{tour\-\_\-path\-\_\-t} $>$ \hyperlink{namespaceknight__path__t_a9e0a15a5d1f3d40a7ad5fe101905764a}{tour\-\_\-path\-\_\-list\-\_\-t}}\label{namespaceknight__path__t_a9e0a15a5d1f3d40a7ad5fe101905764a}
+
+\begin{DoxyCompactList}\small\item\em \-To declare a vector of \hyperlink{structknight__path__t_1_1tour__path__t}{tour\-\_\-path\-\_\-t}'s. \end{DoxyCompactList}\item 
+typedef std\-::vector$<$ \hyperlink{structknight__path__t_1_1stitch__t}{stitch\-\_\-t} $>$ \hyperlink{namespaceknight__path__t_ab13938a6b52c0039f4123b0fe02e6ef4}{stitch\-\_\-list\-\_\-t}
+\end{DoxyCompactItemize}
+\subsection*{\-Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespaceknight__path__t_a0a9ffd13fa55164ea2147a92e4cf1d9d}{color\-\_\-t} \{ {\bfseries \-B\-L\-A\-C\-K}, 
+{\bfseries \-W\-H\-I\-T\-E}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{namespaceknight__path__t_a43c9781d6e418e7a744ca04c5b1ee4c8}{same\-\_\-color} (int x1, int y1, int x2, int y2)
+\item 
+\hyperlink{namespaceknight__path__t_a0a9ffd13fa55164ea2147a92e4cf1d9d}{color\-\_\-t} \hyperlink{namespaceknight__path__t_a9f9a2b3586f04e4fb11b282d6ad9c3e5}{get\-\_\-cell\-\_\-color} (int x, int y)
+\item 
+std\-::string \hyperlink{namespaceknight__path__t_a7b62e81ce7b081406f94019c8863dc90}{get\-\_\-color\-\_\-name} (\hyperlink{namespaceknight__path__t_a0a9ffd13fa55164ea2147a92e4cf1d9d}{color\-\_\-t} color)
+\item 
+bool \hyperlink{namespaceknight__path__t_aae1cfdfd5ea3ff57eab91c245deaa25c}{scan\-\_\-dim\-\_\-src\-\_\-dest} (std\-::string indata\-\_\-, int \&sx, int \&sy, int \&ex, int \&ey)
+\item 
+void \hyperlink{namespaceknight__path__t_a38964814d6470650a9b5c8c26f3e401b}{print\-\_\-path} (std\-::vector$<$ \hyperlink{structknight__path__t_1_1node__t}{node\-\_\-t} $>$ const \&path)
+\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+.\-H file to define \hyperlink{classknight__path__t_1_1k__getpath__t}{k\-\_\-getpath\-\_\-t} class. \-Loads precomputed paths from database and provides an interface for query.
+
+\begin{DoxyAuthor}{\-Author}
+\-Suresh \-Golconda
+\end{DoxyAuthor}
+.\-H file to define \hyperlink{classknight__path__t_1_1k__path__adapter__t}{k\-\_\-path\-\_\-adapter\-\_\-t} class. \-Adapter function for getting path. \-Can either load from pre-\/computed results or perform fresh search using \hyperlink{classknight__path__t_1_1k__tour__t}{k\-\_\-tour\-\_\-t}.
+
+\begin{DoxyAuthor}{\-Author}
+\-Suresh \-Golconda
+\end{DoxyAuthor}
+.\-H file to define \hyperlink{classknight__path__t_1_1k__searcher__t}{k\-\_\-searcher\-\_\-t} class, which implements functions required for generating database of paths for smaller grids such as 6x6, 6x8, 8x6, 8x8.
+
+\begin{DoxyAuthor}{\-Author}
+\-Suresh \-Golconda
+\end{DoxyAuthor}
+.\-H file to define \hyperlink{classknight__path__t_1_1k__sub__board__t}{k\-\_\-sub\-\_\-board\-\_\-t} class, which implements operations at sub\-\_\-board level
+
+\begin{DoxyAuthor}{\-Author}
+\-Suresh \-Golconda
+\end{DoxyAuthor}
+.\-H file with code for finding knight's touring path. \-Here by \char`\"{}\-T\-O\-U\-R\char`\"{}ing means, hamilton path covering all the cells exactly once. \-With an extension of hamilton path with one-\/less path.
+
+\-This class searches grid for such paths. \-E\-X\-T\-E\-N\-S\-I\-V\-E\-L\-Y tested on grids of size\-: 6x6, 6x8, 8x6, and 8x8.
+
+\-Defines two class\-: \hyperlink{classknight__path__t_1_1solution__t}{solution\-\_\-t} and \hyperlink{classknight__path__t_1_1k__tour__t}{k\-\_\-tour\-\_\-t}
+
+\begin{DoxyAuthor}{\-Author}
+\-Suresh \-Golconda
+\end{DoxyAuthor}
+.\-H file to define utility functions.
+
+\begin{DoxyAuthor}{\-Author}
+\-Suresh \-Golconda 
+\end{DoxyAuthor}
+
+
+\subsection{\-Typedef \-Documentation}
+\hypertarget{namespaceknight__path__t_a50060ec18677595e6da97bc413ddc016}{\index{knight\-\_\-path\-\_\-t@{knight\-\_\-path\-\_\-t}!parameter\-\_\-list\-\_\-t@{parameter\-\_\-list\-\_\-t}}
+\index{parameter\-\_\-list\-\_\-t@{parameter\-\_\-list\-\_\-t}!knight_path_t@{knight\-\_\-path\-\_\-t}}
+\subsubsection[{parameter\-\_\-list\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::vector$<${\bf parameters\-\_\-t}$>$ {\bf knight\-\_\-path\-\_\-t\-::parameter\-\_\-list\-\_\-t}}}\label{namespaceknight__path__t_a50060ec18677595e6da97bc413ddc016}
+\-Typedef for declaring vector of parameters \hypertarget{namespaceknight__path__t_ab13938a6b52c0039f4123b0fe02e6ef4}{\index{knight\-\_\-path\-\_\-t@{knight\-\_\-path\-\_\-t}!stitch\-\_\-list\-\_\-t@{stitch\-\_\-list\-\_\-t}}
+\index{stitch\-\_\-list\-\_\-t@{stitch\-\_\-list\-\_\-t}!knight_path_t@{knight\-\_\-path\-\_\-t}}
+\subsubsection[{stitch\-\_\-list\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}typedef std\-::vector$<${\bf stitch\-\_\-t}$>$ {\bf knight\-\_\-path\-\_\-t\-::stitch\-\_\-list\-\_\-t}}}\label{namespaceknight__path__t_ab13938a6b52c0039f4123b0fe02e6ef4}
+\-A vector of stitchs' 
+
+\subsection{\-Enumeration \-Type \-Documentation}
+\hypertarget{namespaceknight__path__t_a0a9ffd13fa55164ea2147a92e4cf1d9d}{\index{knight\-\_\-path\-\_\-t@{knight\-\_\-path\-\_\-t}!color\-\_\-t@{color\-\_\-t}}
+\index{color\-\_\-t@{color\-\_\-t}!knight_path_t@{knight\-\_\-path\-\_\-t}}
+\subsubsection[{color\-\_\-t}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf knight\-\_\-path\-\_\-t\-::color\-\_\-t}}}\label{namespaceknight__path__t_a0a9ffd13fa55164ea2147a92e4cf1d9d}
+\-Enum to reprsent color of a cell 
+
+\subsection{\-Function \-Documentation}
+\hypertarget{namespaceknight__path__t_a9f9a2b3586f04e4fb11b282d6ad9c3e5}{\index{knight\-\_\-path\-\_\-t@{knight\-\_\-path\-\_\-t}!get\-\_\-cell\-\_\-color@{get\-\_\-cell\-\_\-color}}
+\index{get\-\_\-cell\-\_\-color@{get\-\_\-cell\-\_\-color}!knight_path_t@{knight\-\_\-path\-\_\-t}}
+\subsubsection[{get\-\_\-cell\-\_\-color}]{\setlength{\rightskip}{0pt plus 5cm}{\bf color\-\_\-t} {\bf knight\-\_\-path\-\_\-t\-::get\-\_\-cell\-\_\-color} (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}}\label{namespaceknight__path__t_a9f9a2b3586f04e4fb11b282d6ad9c3e5}
+\-Returns the color of the given (x, y) node. \-It is assumed that node (0,0) white (typically in cheess). \-It holds for all sub-\/boards in our case, as all sub-\/boards have have even size dimensions \hypertarget{namespaceknight__path__t_a7b62e81ce7b081406f94019c8863dc90}{\index{knight\-\_\-path\-\_\-t@{knight\-\_\-path\-\_\-t}!get\-\_\-color\-\_\-name@{get\-\_\-color\-\_\-name}}
+\index{get\-\_\-color\-\_\-name@{get\-\_\-color\-\_\-name}!knight_path_t@{knight\-\_\-path\-\_\-t}}
+\subsubsection[{get\-\_\-color\-\_\-name}]{\setlength{\rightskip}{0pt plus 5cm}string {\bf knight\-\_\-path\-\_\-t\-::get\-\_\-color\-\_\-name} (
+\begin{DoxyParamCaption}
+\item[{{\bf color\-\_\-t}}]{color}
+\end{DoxyParamCaption}
+)}}\label{namespaceknight__path__t_a7b62e81ce7b081406f94019c8863dc90}
+\-Returns the name of the given color as a string. \-Used for printing \hypertarget{namespaceknight__path__t_a38964814d6470650a9b5c8c26f3e401b}{\index{knight\-\_\-path\-\_\-t@{knight\-\_\-path\-\_\-t}!print\-\_\-path@{print\-\_\-path}}
+\index{print\-\_\-path@{print\-\_\-path}!knight_path_t@{knight\-\_\-path\-\_\-t}}
+\subsubsection[{print\-\_\-path}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf knight\-\_\-path\-\_\-t\-::print\-\_\-path} (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ node\-\_\-t $>$ const \&}]{path}
+\end{DoxyParamCaption}
+)}}\label{namespaceknight__path__t_a38964814d6470650a9b5c8c26f3e401b}
+\-Prints the provided path onto screen \hypertarget{namespaceknight__path__t_a43c9781d6e418e7a744ca04c5b1ee4c8}{\index{knight\-\_\-path\-\_\-t@{knight\-\_\-path\-\_\-t}!same\-\_\-color@{same\-\_\-color}}
+\index{same\-\_\-color@{same\-\_\-color}!knight_path_t@{knight\-\_\-path\-\_\-t}}
+\subsubsection[{same\-\_\-color}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf knight\-\_\-path\-\_\-t\-::same\-\_\-color} (
+\begin{DoxyParamCaption}
+\item[{int}]{x1, }
+\item[{int}]{y1, }
+\item[{int}]{x2, }
+\item[{int}]{y2}
+\end{DoxyParamCaption}
+)}}\label{namespaceknight__path__t_a43c9781d6e418e7a744ca04c5b1ee4c8}
+\-Returns true if given pair of nodes both have similar color \hypertarget{namespaceknight__path__t_aae1cfdfd5ea3ff57eab91c245deaa25c}{\index{knight\-\_\-path\-\_\-t@{knight\-\_\-path\-\_\-t}!scan\-\_\-dim\-\_\-src\-\_\-dest@{scan\-\_\-dim\-\_\-src\-\_\-dest}}
+\index{scan\-\_\-dim\-\_\-src\-\_\-dest@{scan\-\_\-dim\-\_\-src\-\_\-dest}!knight_path_t@{knight\-\_\-path\-\_\-t}}
+\subsubsection[{scan\-\_\-dim\-\_\-src\-\_\-dest}]{\setlength{\rightskip}{0pt plus 5cm}bool {\bf knight\-\_\-path\-\_\-t\-::scan\-\_\-dim\-\_\-src\-\_\-dest} (
+\begin{DoxyParamCaption}
+\item[{std\-::string}]{indata\-\_\-, }
+\item[{int \&}]{sx, }
+\item[{int \&}]{sy, }
+\item[{int \&}]{ex, }
+\item[{int \&}]{ey}
+\end{DoxyParamCaption}
+)}}\label{namespaceknight__path__t_aae1cfdfd5ea3ff57eab91c245deaa25c}
+\-Utility function to scan, src, and destination node's coordinates. \-Expected format\-: comma seperated four numbers.
+
+\begin{DoxyReturn}{\-Returns}
+\-True if scan was successful, else false 
+\end{DoxyReturn}
