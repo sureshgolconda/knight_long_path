@@ -524,14 +524,14 @@ bool k_32_search_t::apply_valid_stitch(sub_board_grid_t &sb,
 	}
       else
 	{
-	  printf("ERROR: Not a valid stitch\n");
-	  printf("Stitching board sb(%d, %d) to sb(%d,%d):\t dm(%d %d) (%d %d)\n",
-	  	 sb_indx, sb_indy, next_sb_indx, next_sb_indy,
-	  	 board1.get_maxx(), board1.get_maxy(),
-	  	 board2.get_maxx(), board2.get_maxy());
+	  // printf("ERROR: Not a valid stitch\n");
+	  // printf("Stitching board sb(%d, %d) to sb(%d,%d):\t dm(%d %d) (%d %d)\n",
+	  // 	 sb_indx, sb_indy, next_sb_indx, next_sb_indy,
+	  // 	 board1.get_maxx(), board1.get_maxy(),
+	  // 	 board2.get_maxx(), board2.get_maxy());
 
-	  printf("stitch(%d): (%d, %d), (%d %d)\n\n",i,
-	  	 st.m_delx1, st.m_dely1, st.m_delx2, st.m_dely2);
+	  // printf("stitch(%d): (%d, %d), (%d %d)\n\n",i,
+	  // 	 st.m_delx1, st.m_dely1, st.m_delx2, st.m_dely2);
 
 
 	  //assert(false);
