@@ -1,0 +1,30 @@
+Updated the system to optionally regenerate the values from scratch or use precomputed db.
+Test this.
+
+On lenova, running testing on sequence.
+
+all features done.
+
+todo:
+Update main program usage.
+remove some of the print statemetns
+Documentation
+
+
+Sytem crashing for 0,0->11,5. when reach_via_diagnal () is NOT active
+else crashes at 0,12-> 0,0
+fixed by increasing the search limit for sub-board level
+
+
+
+k_tour.H: done
+k_tour.C: done
+k_util.H: done
+k_util.C: done
+
+
+k_getpath.H
+k_getpath.C
+board.H
+board.C
+k2_main.C

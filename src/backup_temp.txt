@@ -1,0 +1,101 @@
+/***
+File to store backup code used for special cases for testing.
+*/
+
+/**
+   Test function for debugging special situations. Explores the board
+   to find hamilton path between given pair of points
+ */
+void   test_custom_sample()
+{
+  int maxx = 8;
+  int maxy = 6;
+  k_tour_t kt (maxx, maxy, 100);
+  int sx = 2;
+  int sy = 1;
+  int ex = 2;
+  int ey= 2;
+  solution_t temp_sol (maxx, maxy);
+
+  if (!kt.solveKT (sx, sy, ex, ey, temp_sol))
+    {
+      if (!kt.solveKT (ex, ey, sx, sy, temp_sol))
+	{
+	  printf("FAILED_SEARCH: %d %d %d %d\n",
+		 sx, sy, ex, ey);
+	}
+
+    }
+}
+
+/**
+   Test function for testing capability of pulling out path for
+   specified start-end points
+ */
+void temp_test_paths()
+{
+  k_getpath_t kpath;
+  kpath.load_all_para();
+  // kpath.test_all_paths();
+  vector<node_t> path;
+  int maxx = 6;
+  int maxy = 6;
+
+  int sx=5;
+  int sy=5;
+  int ex = 4;
+  int ey =4;
+  //if (!kpath.get_path(6,8, 0 ,0,   2,5, path))
+  if (!kpath.get_path(maxx, maxy, sx, sy, ex, ey, path))
+    printf("ERROR finding path on board of size(%d %d), start(%d %d), end(%d %d) \n",
+  	   maxx, maxy, sx, sy, ex, ey);
+  else
+    printf("Found, sz=%lu\n",path.size());
+
+  for (int i=0; i< path.size(); i++)
+    printf("(%2d,%2d) ", path[i].posx, path[i].posy);
+  printf("\n");
+
+  printf("quitting\n");
+}
+
+
+void test_sub_search()
+{
+  int maxx = 5;
+  int maxy = 5;
+
+  //lopped path
+  int sx =0;
+  int sy = 0;
+  vector<node_t> node_sq;
+  node_t nd;
+  nd.posx = sx;
+  nd.posy = sy;
+  node_sq.push_back (nd);
+
+  nd.posx = sx+1; //right side
+  nd.posy = sy;
+  node_sq.push_back (nd);
+
+  int ex= sx;
+  int ey = sy+1; //bottom of start
+
+  solution_t temp_sol (maxx, maxy);
+  temp_sol.reset(-1);
+
+  k_tour_t kt (5, 5, 10, false);
+  kt.reset();
+
+  printf("SEARCHING: (%d %d) to (%d %d)\n",sx, sy, ex, ey);
+  if (!kt.solveKT_new(sx, sy, ex, ey, temp_sol, node_sq))
+    {
+      printf("search Failed\n");
+    }
+  else
+    printf("search good  (\n");
+
+  temp_sol.display_board();
+}
+
+
