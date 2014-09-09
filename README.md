@@ -28,7 +28,6 @@ $bin/knight_long_path -a -s 0,0 -e 31,3
 
 
 
-
 Notes:
 ------
 - Run the program (knight_long_path) or scripts from 'src' or 'scripts' folder. This is because the system tries to access 'data' folder via relative path '../data/'. This is not required if no pre-computed paths are used. That is running with "-d" option
@@ -84,6 +83,12 @@ Terminology/Convention:
 
 Algorithm:
 ----------
+Please refer docs/knight_longest_path_solution.pdf for description on the solution implemented
+
+Testing:
+--------
+- The algorithmic approach is tested by running the programs on randomly generated start-end nodes on 32x32 grid. And the test helped to discover few special/exception cases that are fixed in the present implementation.
+- System implementation is testing at code-level by using gprof for CPU optimization, and valgrind for proper memory handling.
 
 
 Overview of major classes/files:
