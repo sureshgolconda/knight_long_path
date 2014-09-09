@@ -23,9 +23,8 @@ Run: (note: run the scripts from 'scripts' folder)
 
 $cd scripts
 
-$./<script_name>
 
-eg: $ ./level_5_sample_run.sh
+$ ./level_5_sample_run.sh
 
 (or) to find longest path from (0,0) to (31,3) run following command:
 
