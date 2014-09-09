@@ -26,11 +26,11 @@ $cd scripts
 
 $ ./level_5_sample_run.sh
 
-(or) to find longest path from (0,0) to (31,3) run following command:
+(or) to directly run the c++ program use following syntax. To find longest path from (0,0) to (31,3):
 
 $bin/knight_long_path -a -s 0,0 -e 31,3
 
-Provide -d option to the 'knight_long_path' if prefered not to use pre-computed subboard paths.
+Provide -d option to the 'knight_long_path' program if you prefer not to use pre-computed subboard paths.
 
 
 
