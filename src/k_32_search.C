@@ -35,7 +35,7 @@ bool k_32_search_t::get_subboard_sequence(int ex, int ey, solution_t &sol,
     }
   else
     {
-      printf("YES: %d %d %d %d\n",sx, sy, ex, ey);
+      //printf("YES: %d %d %d %d\n",sx, sy, ex, ey);
       return true;
     }
 }
@@ -181,7 +181,7 @@ void k_32_search_t::create_sub_board_grid (sub_board_grid_t &sb_grid,
 
 void k_32_search_t::display_sub_board_grid(sub_board_grid_t const &sb_grid)
 {
-  printf("Format: [base_gx,y,   maxx,y,    stx,y edxy]\n");
+  printf("\nSub-boards along with stitching points (Format: [base_gx,y,   maxx,y,    stx,y edxy])\n");
   for (int sb_yi =0; sb_yi <5; sb_yi++)
     {
       for (int sb_xi =0; sb_xi < 5; sb_xi++)
@@ -351,8 +351,8 @@ bool k_32_search_t::valid_stitch_points (k_sub_board_t const &board1,
   if ((board1.to_global_x (new_x1) == m_global_gsx) &&
       (board1.to_global_y (new_y1) == m_global_gsy))
     {
-      printf("INFO: start node is global start node (%d, %d)",
-      	     new_x1, new_y1);
+      // printf("INFO: start node is global start node (%d, %d)",
+      // 	     new_x1, new_y1);
       return false;
     }
   // --- Or 2nd node is the global end node, (then skipping using
@@ -360,8 +360,8 @@ bool k_32_search_t::valid_stitch_points (k_sub_board_t const &board1,
   if ((board2.to_global_x (new_x2) == m_global_gex) &&
       (board2.to_global_y (new_y2) == m_global_gey))
     {
-      printf("INFO: end node is global end node (%d, %d)",
-      	     new_x2, new_y2);
+      // printf("INFO: end node is global end node (%d, %d)",
+      // 	     new_x2, new_y2);
 
       return false;
     }
@@ -370,9 +370,9 @@ bool k_32_search_t::valid_stitch_points (k_sub_board_t const &board1,
   // (ii) --- 1st node is already marked as start node
   if ((board1.lsx == new_x1) && (board1.lsy == new_y1))
     {
-      printf("INFO: 1st node is already marked as start (%d %d) global(%d,%d)\n",
-      	     new_x1, new_y1, board1.to_global_x(new_x1),
-      	     board1.to_global_y (new_y1));
+      // printf("INFO: 1st node is already marked as start (%d %d) global(%d,%d)\n",
+      // 	     new_x1, new_y1, board1.to_global_x(new_x1),
+      	     // board1.to_global_y (new_y1));
       return false;
     }
 
@@ -380,23 +380,23 @@ bool k_32_search_t::valid_stitch_points (k_sub_board_t const &board1,
   // (iii) --- 2nd node is already used an exit node
   if ((board2.lex == new_x2) && (board2.ley == new_y2))
     {
-      printf("INFO: 2nd node already used as exit node (%d %d) global(%d,%d)\n",
-      	     new_x2, new_y2, board2.to_global_x(new_x2),
-      	     board2.to_global_y (new_y2));
+      // printf("INFO: 2nd node already used as exit node (%d %d) global(%d,%d)\n",
+      // 	     new_x2, new_y2, board2.to_global_x(new_x2),
+      // 	     board2.to_global_y (new_y2));
       return false;
     }
 
   // (iv) --- Start cell color should be same as global cell color
   if (get_cell_color (new_x2, new_y2) != m_sub_board_start_color)
     {
-      printf("INFO: sub-board start cell color is not same as global (%s, %s) (%d %d)\n",
-      	     get_color_name (m_sub_board_start_color).c_str(),
-      	     get_color_name (get_cell_color (new_x2, new_y2)).c_str(),
-      	     new_x2, new_y2);
-      printf("colors gl=%d, this %d, xy (%d %d)\n",
-      	     m_sub_board_start_color, 
-	     get_cell_color (new_x2, new_y2), new_x2, new_y2);
-      printf("board2= base(%d %d)\n", board2.base_gx, board2.base_gy);
+      // printf("INFO: sub-board start cell color is not same as global (%s, %s) (%d %d)\n",
+      // 	     get_color_name (m_sub_board_start_color).c_str(),
+      // 	     get_color_name (get_cell_color (new_x2, new_y2)).c_str(),
+      // 	     new_x2, new_y2);
+      // printf("colors gl=%d, this %d, xy (%d %d)\n",
+      // 	     m_sub_board_start_color, 
+      // 	     get_cell_color (new_x2, new_y2), new_x2, new_y2);
+      // printf("board2= base(%d %d)\n", board2.base_gx, board2.base_gy);
       return false;
     }
 
@@ -415,10 +415,11 @@ bool k_32_search_t::apply_valid_stitch(sub_board_grid_t &sb,
   k_sub_board_t &board1 = (sb.m_boards[sb_indx][sb_indy]);
   k_sub_board_t &board2 = (sb.m_boards[next_sb_indx][next_sb_indy]);
 
-  printf("\n\nBoards for stitching: (%d %d) dim (%d %d), (%d %d) dim (%d %d)\n",
+  printf("\nBoards for stitching: (%d %d) dim (%d %d), (%d %d) dim (%d %d). # of stitches=%lu\n",
 	 sb_indx, sb_indy, board1.get_maxx(), board1.get_maxy(),
-	 next_sb_indx, next_sb_indy, board2.get_maxx(), board2.get_maxy());
-  printf("No.of stitches %lu\n", stitches.size());
+	 next_sb_indx, next_sb_indy, board2.get_maxx(), board2.get_maxy(),
+	 stitches.size());
+  // printf("No.of stitches %lu\n", stitches.size());
 
   for (int i=0; i< stitches.size(); i++)
     { //for each stitch
@@ -495,7 +496,7 @@ bool k_32_search_t::apply_valid_stitch(sub_board_grid_t &sb,
 	  assert(false);
 	}
 
-      printf("checking for valid stitch %d\n", i);
+      // printf("checking for valid stitch %d\n", i);
       // --- check if new positions would be valid ---
       if (valid_stitch_points (board1, new_x1, new_y1, board2, new_x2, new_y2))
 	//if (true) // valid new stitching points

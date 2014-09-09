@@ -29,7 +29,7 @@ bool k_path_adapter_t::get_path(int maxx, int maxy,
 
   if (m_use_db)
     {
-      printf("PATH from db\n");
+      // printf("PATH from db\n");
       return m_pre_paths.get_path (maxx, maxy, sx, sy, ex, ey, path);
     }
   else //generate path

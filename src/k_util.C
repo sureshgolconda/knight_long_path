@@ -80,3 +80,35 @@ void knight_path_t::print_path(vector<node_t> const &path)
   printf("\n");
 }
 
+void knight_path_t::display_path_32board(vector<node_t> const &path,
+					 int gsx, int gsy, int gex, int gey)
+{
+  printf("\nSolution:\n");
+  printf("Following is one of the longest path on 32x32 grid, from (%d %d) to (%d %d), length= %lu\n",
+	 gsx, gsy, gex, gey, path.size());
+  int maxx = 32;
+  int maxy = 32;
+  int values[maxx][maxy];
+
+  for (int y=0; y<maxy; y++)
+    for (int x=0; x<maxx; x++)
+      values[x][y] = -1;
+
+  for (int i=0; i< path.size(); i++)
+    {
+      values[path[i].posx][path[i].posy] = i;
+    }
+
+  for (int y=0; y<maxy; y++)
+    {
+    for (int x=0; x<maxx; x++)
+      {
+	if (values[x][y] == -1)
+	  printf("     ");
+	else
+	  printf(" %4d", values[x][y]);
+      }
+    printf("\n");
+    }
+}
+

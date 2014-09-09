@@ -149,6 +149,10 @@ namespace knight_path_t
      Prints the provided path onto screen
    */
   void print_path(std::vector<node_t> const &path);
+  
+  void display_path_32board(std::vector<node_t> const &path,
+			    int gsx, int gsy, int gex, int gey);
+
 };
 
 #endif

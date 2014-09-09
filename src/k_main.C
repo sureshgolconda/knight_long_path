@@ -138,11 +138,12 @@ void run_longest_path_32_grid(int gsx=-1, int gsy=-1,
     }
   else // if correct path is found, then print to screen
     {
-      print_path (longest_path);
+      //print_path (longest_path);
+      display_path_32board (longest_path, gsx, gsy, gex, gey);
       printf("SUCCESS: ");
     }
 
-  printf("Expected longest path:%d, searched longest path:%lu\n",
+  printf("Expected longest path:%d, computed path length:%lu\n",
 	 expected_length,
 	 longest_path.size());
 }
@@ -182,7 +183,8 @@ void test_path_adapter()
   else
     {
       printf("Path size, when using database %lu\n", path.size());
-      print_path (path);
+      //print_path (path);
+      display_path_32board (path, sx, sy, ex, ey);
     }
 
 }
