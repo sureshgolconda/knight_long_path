@@ -14,12 +14,17 @@ Present system tries to impelement algorithm for finding the longest knight's pa
 Instructions:
 -------------
 Compile:
+
 $cd src
+
 $ make
 
-Run:
+Run: (note: run the scripts from 'scripts' folder)
+
 $cd scripts
+
 $./<script_name>
+
 eg: $ ./level_5_sample_run.sh
 
 (or) to find longest path from (0,0) to (31,3) run following command:
