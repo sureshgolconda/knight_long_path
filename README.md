@@ -39,7 +39,7 @@ Notes:
 - Run the program (knight_long_path) or scripts from 'src' or 'scripts' folder. This is because the system tries to access 'data' folder via relative path '../data/'. This is not required if no pre-computed paths are used. That is running with "-d" option
 
 - Program is analyzed with gprof for CPU usage and
-  optimization. Including sample analysis in analysis folder.
+  optimization. Including sample analysis in "analysis" folder.
 
 - Program is analyzed for memory utilization using valgrind.
 
