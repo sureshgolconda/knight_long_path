@@ -1,0 +1,423 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+ no time accumulated
+
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+  0.00      0.00     0.00    19652     0.00     0.00  void std::vector<int, std::allocator<int> >::_M_insert_aux<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&)
+  0.00      0.00     0.00     2801     0.00     0.00  knight_path_t::k_getpath_t::scan_path_string(knight_path_t::tour_path_t&, std::string)
+  0.00      0.00     0.00       73     0.00     0.00  knight_path_t::get_cell_color(int, int)
+  0.00      0.00     0.00       53     0.00     0.00  void std::vector<knight_path_t::tour_path_t, std::allocator<knight_path_t::tour_path_t> >::_M_insert_aux<knight_path_t::tour_path_t const&>(__gnu_cxx::__normal_iterator<knight_path_t::tour_path_t*, std::vector<knight_path_t::tour_path_t, std::allocator<knight_path_t::tour_path_t> > >, knight_path_t::tour_path_t const&)
+  0.00      0.00     0.00       40     0.00     0.00  knight_path_t::k_32_search_t::valid_stitch_points(knight_path_t::k_sub_board_t const&, int, int, knight_path_t::k_sub_board_t const&, int, int)
+  0.00      0.00     0.00       36     0.00     0.00  void std::__unguarded_linear_insert<std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*> >(std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>)
+  0.00      0.00     0.00       32     0.00     0.00  knight_path_t::get_color_name(knight_path_t::color_t)
+  0.00      0.00     0.00       26     0.00     0.00  knight_path_t::k_tour_t::isSafe(knight_path_t::solution_t const&, int, int)
+  0.00      0.00     0.00       25     0.00     0.00  knight_path_t::k_getpath_t::get_path_board(std::vector<knight_path_t::tour_path_t, std::allocator<knight_path_t::tour_path_t> > const&, int, int, int, int, knight_path_t::tour_path_t&)
+  0.00      0.00     0.00       25     0.00     0.00  knight_path_t::k_getpath_t::get_path(int, int, int, int, int, int, knight_path_t::tour_path_t&)
+  0.00      0.00     0.00       25     0.00     0.00  knight_path_t::k_getpath_t::get_path(int, int, int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&)
+  0.00      0.00     0.00       25     0.00     0.00  knight_path_t::k_32_search_t::append_as_global_path(knight_path_t::k_sub_board_t const&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > const&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&)
+  0.00      0.00     0.00       25     0.00     0.00  knight_path_t::k_32_search_t::get_next_sub_board_index(knight_path_t::sub_board_grid_t const&, knight_path_t::solution_t const&, int, int, int&, int&)
+  0.00      0.00     0.00       25     0.00     0.00  knight_path_t::k_sub_board_t::set_max_xy(int, int)
+  0.00      0.00     0.00       25     0.00     0.00  knight_path_t::k_path_adapter_t::get_path(int, int, int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&)
+  0.00      0.00     0.00       25     0.00     0.00  knight_path_t::solution_t::search_for(int, int&, int&) const
+  0.00      0.00     0.00       25     0.00     0.00  void std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >::_M_insert_aux<knight_path_t::node_t const&>(__gnu_cxx::__normal_iterator<knight_path_t::node_t*, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > >, knight_path_t::node_t const&)
+  0.00      0.00     0.00       24     0.00     0.00  knight_path_t::k_32_search_t::get_stitches(int, int, std::vector<knight_path_t::stitch_t, std::allocator<knight_path_t::stitch_t> >&)
+  0.00      0.00     0.00       24     0.00     0.00  knight_path_t::k_32_search_t::stitching_points(knight_path_t::sub_board_grid_t&, int, int, int, int)
+  0.00      0.00     0.00       24     0.00     0.00  knight_path_t::k_32_search_t::apply_valid_stitch(knight_path_t::sub_board_grid_t&, std::vector<knight_path_t::stitch_t, std::allocator<knight_path_t::stitch_t> > const&, int, int, int, int)
+  0.00      0.00     0.00       24     0.00     0.00  knight_path_t::k_tour_t::get_ordered_children(knight_path_t::solution_t const&, int, int, std::deque<knight_path_t::k_tour_t::child_t, std::allocator<knight_path_t::k_tour_t::child_t> >&)
+  0.00      0.00     0.00       24     0.00     0.00  std::_Deque_base<knight_path_t::k_tour_t::child_t, std::allocator<knight_path_t::k_tour_t::child_t> >::_M_initialize_map(unsigned long)
+  0.00      0.00     0.00       24     0.00     0.00  void std::vector<knight_path_t::stitch_t, std::allocator<knight_path_t::stitch_t> >::_M_insert_aux<knight_path_t::stitch_t const&>(__gnu_cxx::__normal_iterator<knight_path_t::stitch_t*, std::vector<knight_path_t::stitch_t, std::allocator<knight_path_t::stitch_t> > >, knight_path_t::stitch_t const&)
+  0.00      0.00     0.00       24     0.00     0.00  std::vector<knight_path_t::stitch_t, std::allocator<knight_path_t::stitch_t> >::operator=(std::vector<knight_path_t::stitch_t, std::allocator<knight_path_t::stitch_t> > const&)
+  0.00      0.00     0.00       24     0.00     0.00  void std::__insertion_sort<std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*> >(std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>, std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>)
+  0.00      0.00     0.00       24     0.00     0.00  void std::__introsort_loop<std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>, long>(std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>, std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>, long)
+  0.00      0.00     0.00       24     0.00     0.00  void std::__final_insertion_sort<std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*> >(std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>, std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>)
+  0.00      0.00     0.00       19     0.00     0.00  std::vector<int, std::allocator<int> >::operator=(std::vector<int, std::allocator<int> > const&)
+  0.00      0.00     0.00       12     0.00     0.00  std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*> std::move_backward<knight_path_t::k_tour_t::child_t>(std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t const&, knight_path_t::k_tour_t::child_t const*>, std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t const&, knight_path_t::k_tour_t::child_t const*>, std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>)
+  0.00      0.00     0.00        6     0.00     0.00  knight_path_t::k_tour_t::reset()
+  0.00      0.00     0.00        5     0.00     0.00  knight_path_t::k_getpath_t::load_parameters(std::vector<knight_path_t::tour_path_t, std::allocator<knight_path_t::tour_path_t> >&, std::string)
+  0.00      0.00     0.00        2     0.00     0.00  knight_path_t::solution_t::display_board()
+  0.00      0.00     0.00        2     0.00     0.00  knight_path_t::k_32_search_t::find_position(int, int, int&)
+  0.00      0.00     0.00        2     0.00     0.00  knight_path_t::k_32_search_t::get_sub_board_node(int, int, knight_path_t::node_t&, int, int)
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I__ZN13knight_path_t13k_32_search_t12m_king_xMoveE
+  0.00      0.00     0.00        1     0.00     0.00  _GLOBAL__sub_I_progname
+  0.00      0.00     0.00        1     0.00     0.00  expected_path_length(int, int, int, int, int, int)
+  0.00      0.00     0.00        1     0.00     0.00  knight_path_t::print_path(std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > const&)
+  0.00      0.00     0.00        1     0.00     0.00  knight_path_t::same_color(int, int, int, int)
+  0.00      0.00     0.00        1     0.00     0.00  knight_path_t::k_32_search_t::find_complete_path(knight_path_t::sub_board_grid_t&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > const&, int, int, int, int, knight_path_t::k_path_adapter_t&, knight_path_t::node_t const&, knight_path_t::node_t const&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&, bool)
+  0.00      0.00     0.00        1     0.00     0.00  knight_path_t::k_32_search_t::get_sub_board_conf(int, int, int, int, int&, int&)
+  0.00      0.00     0.00        1     0.00     0.00  knight_path_t::k_32_search_t::initialize_stitches()
+  0.00      0.00     0.00        1     0.00     0.00  knight_path_t::k_32_search_t::create_sub_board_grid(knight_path_t::sub_board_grid_t&, int, int)
+  0.00      0.00     0.00        1     0.00     0.00  knight_path_t::k_32_search_t::find_stitching_points(knight_path_t::sub_board_grid_t&, knight_path_t::solution_t const&, int, int)
+  0.00      0.00     0.00        1     0.00     0.00  knight_path_t::k_32_search_t::get_subboard_sequence(int, int, knight_path_t::solution_t&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > const&)
+  0.00      0.00     0.00        1     0.00     0.00  knight_path_t::k_32_search_t::display_sub_board_grid(knight_path_t::sub_board_grid_t const&)
+  0.00      0.00     0.00        1     0.00     0.00  knight_path_t::k_32_search_t::search_longest_path_32x(int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&)
+  0.00      0.00     0.00        1     0.00     0.00  knight_path_t::k_32_search_t::convert_board_path_to_list(knight_path_t::solution_t const&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&)
+  0.00      0.00     0.00        1     0.00     0.00  knight_path_t::k_tour_t::solveKTUtil(int, int, int, int, int, int, knight_path_t::solution_t&)
+  0.00      0.00     0.00        1     0.00     0.00  knight_path_t::k_tour_t::solveKT_new(int, int, int, int, knight_path_t::solution_t&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > const&)
+  0.00      0.00     0.00        1     0.00     0.00  knight_path_t::k_tour_t::print_solution(knight_path_t::solution_t const&, int, int)
+  0.00      0.00     0.00        1     0.00     0.00  knight_path_t::k_tour_t::reached_via_diagnal(knight_path_t::solution_t const&, int, int)
+  0.00      0.00     0.00        1     0.00     0.00  knight_path_t::solution_t::get_start_index(int&, int&) const
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+ 
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this 
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) no time propagated
+
+index % time    self  children    called     name
+                0.00    0.00       3/19652       knight_path_t::k_32_search_t::search_longest_path_32x(int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [52]
+                0.00    0.00      42/19652       knight_path_t::k_getpath_t::get_path_board(std::vector<knight_path_t::tour_path_t, std::allocator<knight_path_t::tour_path_t> > const&, int, int, int, int, knight_path_t::tour_path_t&) [14]
+                0.00    0.00   19607/19652       knight_path_t::k_getpath_t::scan_path_string(knight_path_t::tour_path_t&, std::string) [7]
+[6]      0.0    0.00    0.00   19652         void std::vector<int, std::allocator<int> >::_M_insert_aux<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) [6]
+-----------------------------------------------
+                0.00    0.00    2801/2801        knight_path_t::k_getpath_t::load_parameters(std::vector<knight_path_t::tour_path_t, std::allocator<knight_path_t::tour_path_t> >&, std::string) [36]
+[7]      0.0    0.00    0.00    2801         knight_path_t::k_getpath_t::scan_path_string(knight_path_t::tour_path_t&, std::string) [7]
+                0.00    0.00   19607/19652       void std::vector<int, std::allocator<int> >::_M_insert_aux<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) [6]
+-----------------------------------------------
+                0.00    0.00       1/73          knight_path_t::k_32_search_t::search_longest_path_32x(int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [52]
+                0.00    0.00      72/73          knight_path_t::k_32_search_t::valid_stitch_points(knight_path_t::k_sub_board_t const&, int, int, knight_path_t::k_sub_board_t const&, int, int) [10]
+[8]      0.0    0.00    0.00      73         knight_path_t::get_cell_color(int, int) [8]
+-----------------------------------------------
+                0.00    0.00      53/53          knight_path_t::k_getpath_t::load_parameters(std::vector<knight_path_t::tour_path_t, std::allocator<knight_path_t::tour_path_t> >&, std::string) [36]
+[9]      0.0    0.00    0.00      53         void std::vector<knight_path_t::tour_path_t, std::allocator<knight_path_t::tour_path_t> >::_M_insert_aux<knight_path_t::tour_path_t const&>(__gnu_cxx::__normal_iterator<knight_path_t::tour_path_t*, std::vector<knight_path_t::tour_path_t, std::allocator<knight_path_t::tour_path_t> > >, knight_path_t::tour_path_t const&) [9]
+-----------------------------------------------
+                0.00    0.00      40/40          knight_path_t::k_32_search_t::apply_valid_stitch(knight_path_t::sub_board_grid_t&, std::vector<knight_path_t::stitch_t, std::allocator<knight_path_t::stitch_t> > const&, int, int, int, int) [25]
+[10]     0.0    0.00    0.00      40         knight_path_t::k_32_search_t::valid_stitch_points(knight_path_t::k_sub_board_t const&, int, int, knight_path_t::k_sub_board_t const&, int, int) [10]
+                0.00    0.00      72/73          knight_path_t::get_cell_color(int, int) [8]
+                0.00    0.00      32/32          knight_path_t::get_color_name(knight_path_t::color_t) [12]
+-----------------------------------------------
+                0.00    0.00      36/36          void std::__insertion_sort<std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*> >(std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>, std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>) [30]
+[11]     0.0    0.00    0.00      36         void std::__unguarded_linear_insert<std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*> >(std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>) [11]
+-----------------------------------------------
+                0.00    0.00      32/32          knight_path_t::k_32_search_t::valid_stitch_points(knight_path_t::k_sub_board_t const&, int, int, knight_path_t::k_sub_board_t const&, int, int) [10]
+[12]     0.0    0.00    0.00      32         knight_path_t::get_color_name(knight_path_t::color_t) [12]
+-----------------------------------------------
+                0.00    0.00      26/26          knight_path_t::k_tour_t::solveKTUtil(int, int, int, int, int, int, knight_path_t::solution_t&) [54]
+[13]     0.0    0.00    0.00      26         knight_path_t::k_tour_t::isSafe(knight_path_t::solution_t const&, int, int) [13]
+-----------------------------------------------
+                0.00    0.00      25/25          knight_path_t::k_getpath_t::get_path(int, int, int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [16]
+[14]     0.0    0.00    0.00      25         knight_path_t::k_getpath_t::get_path_board(std::vector<knight_path_t::tour_path_t, std::allocator<knight_path_t::tour_path_t> > const&, int, int, int, int, knight_path_t::tour_path_t&) [14]
+                0.00    0.00      42/19652       void std::vector<int, std::allocator<int> >::_M_insert_aux<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) [6]
+                0.00    0.00      19/19          std::vector<int, std::allocator<int> >::operator=(std::vector<int, std::allocator<int> > const&) [33]
+-----------------------------------------------
+                0.00    0.00      25/25          knight_path_t::k_getpath_t::get_path(int, int, int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [16]
+[15]     0.0    0.00    0.00      25         knight_path_t::k_getpath_t::get_path(int, int, int, int, int, int, knight_path_t::tour_path_t&) [15]
+-----------------------------------------------
+                0.00    0.00      25/25          knight_path_t::k_path_adapter_t::get_path(int, int, int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [20]
+[16]     0.0    0.00    0.00      25         knight_path_t::k_getpath_t::get_path(int, int, int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [16]
+                0.00    0.00      25/25          knight_path_t::k_getpath_t::get_path_board(std::vector<knight_path_t::tour_path_t, std::allocator<knight_path_t::tour_path_t> > const&, int, int, int, int, knight_path_t::tour_path_t&) [14]
+                0.00    0.00      25/25          knight_path_t::k_getpath_t::get_path(int, int, int, int, int, int, knight_path_t::tour_path_t&) [15]
+                0.00    0.00       7/25          void std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >::_M_insert_aux<knight_path_t::node_t const&>(__gnu_cxx::__normal_iterator<knight_path_t::node_t*, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > >, knight_path_t::node_t const&) [22]
+-----------------------------------------------
+                0.00    0.00      25/25          knight_path_t::k_32_search_t::find_complete_path(knight_path_t::sub_board_grid_t&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > const&, int, int, int, int, knight_path_t::k_path_adapter_t&, knight_path_t::node_t const&, knight_path_t::node_t const&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&, bool) [45]
+[17]     0.0    0.00    0.00      25         knight_path_t::k_32_search_t::append_as_global_path(knight_path_t::k_sub_board_t const&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > const&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [17]
+                0.00    0.00      11/25          void std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >::_M_insert_aux<knight_path_t::node_t const&>(__gnu_cxx::__normal_iterator<knight_path_t::node_t*, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > >, knight_path_t::node_t const&) [22]
+-----------------------------------------------
+                0.00    0.00      25/25          knight_path_t::k_32_search_t::find_stitching_points(knight_path_t::sub_board_grid_t&, knight_path_t::solution_t const&, int, int) [49]
+[18]     0.0    0.00    0.00      25         knight_path_t::k_32_search_t::get_next_sub_board_index(knight_path_t::sub_board_grid_t const&, knight_path_t::solution_t const&, int, int, int&, int&) [18]
+-----------------------------------------------
+                0.00    0.00      25/25          knight_path_t::k_32_search_t::create_sub_board_grid(knight_path_t::sub_board_grid_t&, int, int) [48]
+[19]     0.0    0.00    0.00      25         knight_path_t::k_sub_board_t::set_max_xy(int, int) [19]
+-----------------------------------------------
+                0.00    0.00      25/25          knight_path_t::k_32_search_t::find_complete_path(knight_path_t::sub_board_grid_t&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > const&, int, int, int, int, knight_path_t::k_path_adapter_t&, knight_path_t::node_t const&, knight_path_t::node_t const&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&, bool) [45]
+[20]     0.0    0.00    0.00      25         knight_path_t::k_path_adapter_t::get_path(int, int, int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [20]
+                0.00    0.00      25/25          knight_path_t::k_getpath_t::get_path(int, int, int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [16]
+-----------------------------------------------
+                0.00    0.00      25/25          knight_path_t::k_32_search_t::find_stitching_points(knight_path_t::sub_board_grid_t&, knight_path_t::solution_t const&, int, int) [49]
+[21]     0.0    0.00    0.00      25         knight_path_t::solution_t::search_for(int, int&, int&) const [21]
+-----------------------------------------------
+                0.00    0.00       1/25          knight_path_t::k_32_search_t::search_longest_path_32x(int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [52]
+                0.00    0.00       6/25          knight_path_t::k_32_search_t::convert_board_path_to_list(knight_path_t::solution_t const&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [53]
+                0.00    0.00       7/25          knight_path_t::k_getpath_t::get_path(int, int, int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [16]
+                0.00    0.00      11/25          knight_path_t::k_32_search_t::append_as_global_path(knight_path_t::k_sub_board_t const&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > const&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [17]
+[22]     0.0    0.00    0.00      25         void std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >::_M_insert_aux<knight_path_t::node_t const&>(__gnu_cxx::__normal_iterator<knight_path_t::node_t*, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > >, knight_path_t::node_t const&) [22]
+-----------------------------------------------
+                0.00    0.00      24/24          knight_path_t::k_32_search_t::stitching_points(knight_path_t::sub_board_grid_t&, int, int, int, int) [24]
+[23]     0.0    0.00    0.00      24         knight_path_t::k_32_search_t::get_stitches(int, int, std::vector<knight_path_t::stitch_t, std::allocator<knight_path_t::stitch_t> >&) [23]
+-----------------------------------------------
+                0.00    0.00      24/24          knight_path_t::k_32_search_t::find_stitching_points(knight_path_t::sub_board_grid_t&, knight_path_t::solution_t const&, int, int) [49]
+[24]     0.0    0.00    0.00      24         knight_path_t::k_32_search_t::stitching_points(knight_path_t::sub_board_grid_t&, int, int, int, int) [24]
+                0.00    0.00      24/24          std::vector<knight_path_t::stitch_t, std::allocator<knight_path_t::stitch_t> >::operator=(std::vector<knight_path_t::stitch_t, std::allocator<knight_path_t::stitch_t> > const&) [29]
+                0.00    0.00      24/24          knight_path_t::k_32_search_t::get_stitches(int, int, std::vector<knight_path_t::stitch_t, std::allocator<knight_path_t::stitch_t> >&) [23]
+                0.00    0.00      24/24          knight_path_t::k_32_search_t::apply_valid_stitch(knight_path_t::sub_board_grid_t&, std::vector<knight_path_t::stitch_t, std::allocator<knight_path_t::stitch_t> > const&, int, int, int, int) [25]
+-----------------------------------------------
+                0.00    0.00      24/24          knight_path_t::k_32_search_t::stitching_points(knight_path_t::sub_board_grid_t&, int, int, int, int) [24]
+[25]     0.0    0.00    0.00      24         knight_path_t::k_32_search_t::apply_valid_stitch(knight_path_t::sub_board_grid_t&, std::vector<knight_path_t::stitch_t, std::allocator<knight_path_t::stitch_t> > const&, int, int, int, int) [25]
+                0.00    0.00      40/40          knight_path_t::k_32_search_t::valid_stitch_points(knight_path_t::k_sub_board_t const&, int, int, knight_path_t::k_sub_board_t const&, int, int) [10]
+-----------------------------------------------
+                0.00    0.00      24/24          knight_path_t::k_tour_t::solveKTUtil(int, int, int, int, int, int, knight_path_t::solution_t&) [54]
+[26]     0.0    0.00    0.00      24         knight_path_t::k_tour_t::get_ordered_children(knight_path_t::solution_t const&, int, int, std::deque<knight_path_t::k_tour_t::child_t, std::allocator<knight_path_t::k_tour_t::child_t> >&) [26]
+                0.00    0.00      24/24          void std::__introsort_loop<std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>, long>(std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>, std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>, long) [31]
+                0.00    0.00      24/24          void std::__final_insertion_sort<std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*> >(std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>, std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>) [32]
+-----------------------------------------------
+                0.00    0.00      24/24          knight_path_t::k_tour_t::solveKTUtil(int, int, int, int, int, int, knight_path_t::solution_t&) [54]
+[27]     0.0    0.00    0.00      24         std::_Deque_base<knight_path_t::k_tour_t::child_t, std::allocator<knight_path_t::k_tour_t::child_t> >::_M_initialize_map(unsigned long) [27]
+-----------------------------------------------
+                0.00    0.00      24/24          knight_path_t::k_32_search_t::initialize_stitches() [47]
+[28]     0.0    0.00    0.00      24         void std::vector<knight_path_t::stitch_t, std::allocator<knight_path_t::stitch_t> >::_M_insert_aux<knight_path_t::stitch_t const&>(__gnu_cxx::__normal_iterator<knight_path_t::stitch_t*, std::vector<knight_path_t::stitch_t, std::allocator<knight_path_t::stitch_t> > >, knight_path_t::stitch_t const&) [28]
+-----------------------------------------------
+                0.00    0.00      24/24          knight_path_t::k_32_search_t::stitching_points(knight_path_t::sub_board_grid_t&, int, int, int, int) [24]
+[29]     0.0    0.00    0.00      24         std::vector<knight_path_t::stitch_t, std::allocator<knight_path_t::stitch_t> >::operator=(std::vector<knight_path_t::stitch_t, std::allocator<knight_path_t::stitch_t> > const&) [29]
+-----------------------------------------------
+                0.00    0.00      24/24          void std::__final_insertion_sort<std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*> >(std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>, std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>) [32]
+[30]     0.0    0.00    0.00      24         void std::__insertion_sort<std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*> >(std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>, std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>) [30]
+                0.00    0.00      36/36          void std::__unguarded_linear_insert<std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*> >(std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>) [11]
+                0.00    0.00      12/12          std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*> std::move_backward<knight_path_t::k_tour_t::child_t>(std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t const&, knight_path_t::k_tour_t::child_t const*>, std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t const&, knight_path_t::k_tour_t::child_t const*>, std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>) [34]
+-----------------------------------------------
+                0.00    0.00      24/24          knight_path_t::k_tour_t::get_ordered_children(knight_path_t::solution_t const&, int, int, std::deque<knight_path_t::k_tour_t::child_t, std::allocator<knight_path_t::k_tour_t::child_t> >&) [26]
+[31]     0.0    0.00    0.00      24         void std::__introsort_loop<std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>, long>(std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>, std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>, long) [31]
+-----------------------------------------------
+                0.00    0.00      24/24          knight_path_t::k_tour_t::get_ordered_children(knight_path_t::solution_t const&, int, int, std::deque<knight_path_t::k_tour_t::child_t, std::allocator<knight_path_t::k_tour_t::child_t> >&) [26]
+[32]     0.0    0.00    0.00      24         void std::__final_insertion_sort<std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*> >(std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>, std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>) [32]
+                0.00    0.00      24/24          void std::__insertion_sort<std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*> >(std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>, std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>) [30]
+-----------------------------------------------
+                0.00    0.00      19/19          knight_path_t::k_getpath_t::get_path_board(std::vector<knight_path_t::tour_path_t, std::allocator<knight_path_t::tour_path_t> > const&, int, int, int, int, knight_path_t::tour_path_t&) [14]
+[33]     0.0    0.00    0.00      19         std::vector<int, std::allocator<int> >::operator=(std::vector<int, std::allocator<int> > const&) [33]
+-----------------------------------------------
+                0.00    0.00      12/12          void std::__insertion_sort<std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*> >(std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>, std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>) [30]
+[34]     0.0    0.00    0.00      12         std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*> std::move_backward<knight_path_t::k_tour_t::child_t>(std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t const&, knight_path_t::k_tour_t::child_t const*>, std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t const&, knight_path_t::k_tour_t::child_t const*>, std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>) [34]
+-----------------------------------------------
+                0.00    0.00       2/6           knight_path_t::k_32_search_t::get_subboard_sequence(int, int, knight_path_t::solution_t&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > const&) [50]
+                0.00    0.00       4/6           knight_path_t::k_32_search_t::search_longest_path_32x(int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [52]
+[35]     0.0    0.00    0.00       6         knight_path_t::k_tour_t::reset() [35]
+-----------------------------------------------
+                0.00    0.00       5/5           knight_path_t::k_32_search_t::search_longest_path_32x(int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [52]
+[36]     0.0    0.00    0.00       5         knight_path_t::k_getpath_t::load_parameters(std::vector<knight_path_t::tour_path_t, std::allocator<knight_path_t::tour_path_t> >&, std::string) [36]
+                0.00    0.00    2801/2801        knight_path_t::k_getpath_t::scan_path_string(knight_path_t::tour_path_t&, std::string) [7]
+                0.00    0.00      53/53          void std::vector<knight_path_t::tour_path_t, std::allocator<knight_path_t::tour_path_t> >::_M_insert_aux<knight_path_t::tour_path_t const&>(__gnu_cxx::__normal_iterator<knight_path_t::tour_path_t*, std::vector<knight_path_t::tour_path_t, std::allocator<knight_path_t::tour_path_t> > >, knight_path_t::tour_path_t const&) [9]
+-----------------------------------------------
+                0.00    0.00       1/2           knight_path_t::k_32_search_t::search_longest_path_32x(int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [52]
+                0.00    0.00       1/2           knight_path_t::k_tour_t::solveKT_new(int, int, int, int, knight_path_t::solution_t&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > const&) [55]
+[37]     0.0    0.00    0.00       2         knight_path_t::solution_t::display_board() [37]
+-----------------------------------------------
+                0.00    0.00       2/2           knight_path_t::k_32_search_t::get_sub_board_conf(int, int, int, int, int&, int&) [46]
+[38]     0.0    0.00    0.00       2         knight_path_t::k_32_search_t::find_position(int, int, int&) [38]
+-----------------------------------------------
+                0.00    0.00       2/2           knight_path_t::k_32_search_t::search_longest_path_32x(int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [52]
+[39]     0.0    0.00    0.00       2         knight_path_t::k_32_search_t::get_sub_board_node(int, int, knight_path_t::node_t&, int, int) [39]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [101]
+[40]     0.0    0.00    0.00       1         _GLOBAL__sub_I__ZN13knight_path_t13k_32_search_t12m_king_xMoveE [40]
+-----------------------------------------------
+                0.00    0.00       1/1           __libc_csu_init [101]
+[41]     0.0    0.00    0.00       1         _GLOBAL__sub_I_progname [41]
+-----------------------------------------------
+                0.00    0.00       1/1           run_longest_path_32_grid(int, int, int, int, bool) [61]
+[42]     0.0    0.00    0.00       1         expected_path_length(int, int, int, int, int, int) [42]
+                0.00    0.00       1/1           knight_path_t::same_color(int, int, int, int) [44]
+-----------------------------------------------
+                0.00    0.00       1/1           run_longest_path_32_grid(int, int, int, int, bool) [61]
+[43]     0.0    0.00    0.00       1         knight_path_t::print_path(std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > const&) [43]
+-----------------------------------------------
+                0.00    0.00       1/1           expected_path_length(int, int, int, int, int, int) [42]
+[44]     0.0    0.00    0.00       1         knight_path_t::same_color(int, int, int, int) [44]
+-----------------------------------------------
+                0.00    0.00       1/1           knight_path_t::k_32_search_t::search_longest_path_32x(int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [52]
+[45]     0.0    0.00    0.00       1         knight_path_t::k_32_search_t::find_complete_path(knight_path_t::sub_board_grid_t&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > const&, int, int, int, int, knight_path_t::k_path_adapter_t&, knight_path_t::node_t const&, knight_path_t::node_t const&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&, bool) [45]
+                0.00    0.00      25/25          knight_path_t::k_path_adapter_t::get_path(int, int, int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [20]
+                0.00    0.00      25/25          knight_path_t::k_32_search_t::append_as_global_path(knight_path_t::k_sub_board_t const&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > const&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [17]
+-----------------------------------------------
+                0.00    0.00       1/1           knight_path_t::k_32_search_t::search_longest_path_32x(int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [52]
+[46]     0.0    0.00    0.00       1         knight_path_t::k_32_search_t::get_sub_board_conf(int, int, int, int, int&, int&) [46]
+                0.00    0.00       2/2           knight_path_t::k_32_search_t::find_position(int, int, int&) [38]
+-----------------------------------------------
+                0.00    0.00       1/1           knight_path_t::k_32_search_t::find_stitching_points(knight_path_t::sub_board_grid_t&, knight_path_t::solution_t const&, int, int) [49]
+[47]     0.0    0.00    0.00       1         knight_path_t::k_32_search_t::initialize_stitches() [47]
+                0.00    0.00      24/24          void std::vector<knight_path_t::stitch_t, std::allocator<knight_path_t::stitch_t> >::_M_insert_aux<knight_path_t::stitch_t const&>(__gnu_cxx::__normal_iterator<knight_path_t::stitch_t*, std::vector<knight_path_t::stitch_t, std::allocator<knight_path_t::stitch_t> > >, knight_path_t::stitch_t const&) [28]
+-----------------------------------------------
+                0.00    0.00       1/1           knight_path_t::k_32_search_t::search_longest_path_32x(int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [52]
+[48]     0.0    0.00    0.00       1         knight_path_t::k_32_search_t::create_sub_board_grid(knight_path_t::sub_board_grid_t&, int, int) [48]
+                0.00    0.00      25/25          knight_path_t::k_sub_board_t::set_max_xy(int, int) [19]
+-----------------------------------------------
+                0.00    0.00       1/1           knight_path_t::k_32_search_t::search_longest_path_32x(int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [52]
+[49]     0.0    0.00    0.00       1         knight_path_t::k_32_search_t::find_stitching_points(knight_path_t::sub_board_grid_t&, knight_path_t::solution_t const&, int, int) [49]
+                0.00    0.00      25/25          knight_path_t::solution_t::search_for(int, int&, int&) const [21]
+                0.00    0.00      25/25          knight_path_t::k_32_search_t::get_next_sub_board_index(knight_path_t::sub_board_grid_t const&, knight_path_t::solution_t const&, int, int, int&, int&) [18]
+                0.00    0.00      24/24          knight_path_t::k_32_search_t::stitching_points(knight_path_t::sub_board_grid_t&, int, int, int, int) [24]
+                0.00    0.00       1/1           knight_path_t::k_32_search_t::initialize_stitches() [47]
+                0.00    0.00       1/1           knight_path_t::solution_t::get_start_index(int&, int&) const [58]
+-----------------------------------------------
+                0.00    0.00       1/1           knight_path_t::k_32_search_t::search_longest_path_32x(int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [52]
+[50]     0.0    0.00    0.00       1         knight_path_t::k_32_search_t::get_subboard_sequence(int, int, knight_path_t::solution_t&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > const&) [50]
+                0.00    0.00       2/6           knight_path_t::k_tour_t::reset() [35]
+                0.00    0.00       1/1           knight_path_t::k_tour_t::solveKT_new(int, int, int, int, knight_path_t::solution_t&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > const&) [55]
+-----------------------------------------------
+                0.00    0.00       1/1           knight_path_t::k_32_search_t::search_longest_path_32x(int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [52]
+[51]     0.0    0.00    0.00       1         knight_path_t::k_32_search_t::display_sub_board_grid(knight_path_t::sub_board_grid_t const&) [51]
+-----------------------------------------------
+                0.00    0.00       1/1           run_longest_path_32_grid(int, int, int, int, bool) [61]
+[52]     0.0    0.00    0.00       1         knight_path_t::k_32_search_t::search_longest_path_32x(int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [52]
+                0.00    0.00       5/5           knight_path_t::k_getpath_t::load_parameters(std::vector<knight_path_t::tour_path_t, std::allocator<knight_path_t::tour_path_t> >&, std::string) [36]
+                0.00    0.00       4/6           knight_path_t::k_tour_t::reset() [35]
+                0.00    0.00       3/19652       void std::vector<int, std::allocator<int> >::_M_insert_aux<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&) [6]
+                0.00    0.00       2/2           knight_path_t::k_32_search_t::get_sub_board_node(int, int, knight_path_t::node_t&, int, int) [39]
+                0.00    0.00       1/73          knight_path_t::get_cell_color(int, int) [8]
+                0.00    0.00       1/1           knight_path_t::k_32_search_t::get_sub_board_conf(int, int, int, int, int&, int&) [46]
+                0.00    0.00       1/1           knight_path_t::k_32_search_t::create_sub_board_grid(knight_path_t::sub_board_grid_t&, int, int) [48]
+                0.00    0.00       1/25          void std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >::_M_insert_aux<knight_path_t::node_t const&>(__gnu_cxx::__normal_iterator<knight_path_t::node_t*, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > >, knight_path_t::node_t const&) [22]
+                0.00    0.00       1/1           knight_path_t::k_32_search_t::get_subboard_sequence(int, int, knight_path_t::solution_t&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > const&) [50]
+                0.00    0.00       1/1           knight_path_t::k_32_search_t::convert_board_path_to_list(knight_path_t::solution_t const&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [53]
+                0.00    0.00       1/2           knight_path_t::solution_t::display_board() [37]
+                0.00    0.00       1/1           knight_path_t::k_32_search_t::find_stitching_points(knight_path_t::sub_board_grid_t&, knight_path_t::solution_t const&, int, int) [49]
+                0.00    0.00       1/1           knight_path_t::k_32_search_t::display_sub_board_grid(knight_path_t::sub_board_grid_t const&) [51]
+                0.00    0.00       1/1           knight_path_t::k_32_search_t::find_complete_path(knight_path_t::sub_board_grid_t&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > const&, int, int, int, int, knight_path_t::k_path_adapter_t&, knight_path_t::node_t const&, knight_path_t::node_t const&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&, bool) [45]
+-----------------------------------------------
+                0.00    0.00       1/1           knight_path_t::k_32_search_t::search_longest_path_32x(int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [52]
+[53]     0.0    0.00    0.00       1         knight_path_t::k_32_search_t::convert_board_path_to_list(knight_path_t::solution_t const&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [53]
+                0.00    0.00       6/25          void std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >::_M_insert_aux<knight_path_t::node_t const&>(__gnu_cxx::__normal_iterator<knight_path_t::node_t*, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > >, knight_path_t::node_t const&) [22]
+-----------------------------------------------
+                                  24             knight_path_t::k_tour_t::solveKTUtil(int, int, int, int, int, int, knight_path_t::solution_t&) [54]
+                0.00    0.00       1/1           knight_path_t::k_tour_t::solveKT_new(int, int, int, int, knight_path_t::solution_t&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > const&) [55]
+[54]     0.0    0.00    0.00       1+24      knight_path_t::k_tour_t::solveKTUtil(int, int, int, int, int, int, knight_path_t::solution_t&) [54]
+                0.00    0.00      26/26          knight_path_t::k_tour_t::isSafe(knight_path_t::solution_t const&, int, int) [13]
+                0.00    0.00      24/24          std::_Deque_base<knight_path_t::k_tour_t::child_t, std::allocator<knight_path_t::k_tour_t::child_t> >::_M_initialize_map(unsigned long) [27]
+                0.00    0.00      24/24          knight_path_t::k_tour_t::get_ordered_children(knight_path_t::solution_t const&, int, int, std::deque<knight_path_t::k_tour_t::child_t, std::allocator<knight_path_t::k_tour_t::child_t> >&) [26]
+                0.00    0.00       1/1           knight_path_t::k_tour_t::print_solution(knight_path_t::solution_t const&, int, int) [56]
+                0.00    0.00       1/1           knight_path_t::k_tour_t::reached_via_diagnal(knight_path_t::solution_t const&, int, int) [57]
+                                  24             knight_path_t::k_tour_t::solveKTUtil(int, int, int, int, int, int, knight_path_t::solution_t&) [54]
+-----------------------------------------------
+                0.00    0.00       1/1           knight_path_t::k_32_search_t::get_subboard_sequence(int, int, knight_path_t::solution_t&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > const&) [50]
+[55]     0.0    0.00    0.00       1         knight_path_t::k_tour_t::solveKT_new(int, int, int, int, knight_path_t::solution_t&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > const&) [55]
+                0.00    0.00       1/1           knight_path_t::k_tour_t::solveKTUtil(int, int, int, int, int, int, knight_path_t::solution_t&) [54]
+                0.00    0.00       1/2           knight_path_t::solution_t::display_board() [37]
+-----------------------------------------------
+                0.00    0.00       1/1           knight_path_t::k_tour_t::solveKTUtil(int, int, int, int, int, int, knight_path_t::solution_t&) [54]
+[56]     0.0    0.00    0.00       1         knight_path_t::k_tour_t::print_solution(knight_path_t::solution_t const&, int, int) [56]
+-----------------------------------------------
+                0.00    0.00       1/1           knight_path_t::k_tour_t::solveKTUtil(int, int, int, int, int, int, knight_path_t::solution_t&) [54]
+[57]     0.0    0.00    0.00       1         knight_path_t::k_tour_t::reached_via_diagnal(knight_path_t::solution_t const&, int, int) [57]
+-----------------------------------------------
+                0.00    0.00       1/1           knight_path_t::k_32_search_t::find_stitching_points(knight_path_t::sub_board_grid_t&, knight_path_t::solution_t const&, int, int) [49]
+[58]     0.0    0.00    0.00       1         knight_path_t::solution_t::get_start_index(int&, int&) const [58]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+
+Index by function name
+
+  [40] _GLOBAL__sub_I__ZN13knight_path_t13k_32_search_t12m_king_xMoveE (k_32_search.C) [47] knight_path_t::k_32_search_t::initialize_stitches() [26] knight_path_t::k_tour_t::get_ordered_children(knight_path_t::solution_t const&, int, int, std::deque<knight_path_t::k_tour_t::child_t, std::allocator<knight_path_t::k_tour_t::child_t> >&)
+  [41] _GLOBAL__sub_I_progname (k_main.C) [10] knight_path_t::k_32_search_t::valid_stitch_points(knight_path_t::k_sub_board_t const&, int, int, knight_path_t::k_sub_board_t const&, int, int) [35] knight_path_t::k_tour_t::reset()
+  [42] expected_path_length(int, int, int, int, int, int) [17] knight_path_t::k_32_search_t::append_as_global_path(knight_path_t::k_sub_board_t const&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > const&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [13] knight_path_t::k_tour_t::isSafe(knight_path_t::solution_t const&, int, int)
+  [43] knight_path_t::print_path(std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > const&) [48] knight_path_t::k_32_search_t::create_sub_board_grid(knight_path_t::sub_board_grid_t&, int, int) [21] knight_path_t::solution_t::search_for(int, int&, int&) const
+  [44] knight_path_t::same_color(int, int, int, int) [49] knight_path_t::k_32_search_t::find_stitching_points(knight_path_t::sub_board_grid_t&, knight_path_t::solution_t const&, int, int) [58] knight_path_t::solution_t::get_start_index(int&, int&) const
+  [37] knight_path_t::solution_t::display_board() [50] knight_path_t::k_32_search_t::get_subboard_sequence(int, int, knight_path_t::solution_t&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > const&) [27] std::_Deque_base<knight_path_t::k_tour_t::child_t, std::allocator<knight_path_t::k_tour_t::child_t> >::_M_initialize_map(unsigned long)
+  [14] knight_path_t::k_getpath_t::get_path_board(std::vector<knight_path_t::tour_path_t, std::allocator<knight_path_t::tour_path_t> > const&, int, int, int, int, knight_path_t::tour_path_t&) [51] knight_path_t::k_32_search_t::display_sub_board_grid(knight_path_t::sub_board_grid_t const&) [9] void std::vector<knight_path_t::tour_path_t, std::allocator<knight_path_t::tour_path_t> >::_M_insert_aux<knight_path_t::tour_path_t const&>(__gnu_cxx::__normal_iterator<knight_path_t::tour_path_t*, std::vector<knight_path_t::tour_path_t, std::allocator<knight_path_t::tour_path_t> > >, knight_path_t::tour_path_t const&)
+  [36] knight_path_t::k_getpath_t::load_parameters(std::vector<knight_path_t::tour_path_t, std::allocator<knight_path_t::tour_path_t> >&, std::string) [52] knight_path_t::k_32_search_t::search_longest_path_32x(int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [22] void std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >::_M_insert_aux<knight_path_t::node_t const&>(__gnu_cxx::__normal_iterator<knight_path_t::node_t*, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > >, knight_path_t::node_t const&)
+   [7] knight_path_t::k_getpath_t::scan_path_string(knight_path_t::tour_path_t&, std::string) [18] knight_path_t::k_32_search_t::get_next_sub_board_index(knight_path_t::sub_board_grid_t const&, knight_path_t::solution_t const&, int, int, int&, int&) [28] void std::vector<knight_path_t::stitch_t, std::allocator<knight_path_t::stitch_t> >::_M_insert_aux<knight_path_t::stitch_t const&>(__gnu_cxx::__normal_iterator<knight_path_t::stitch_t*, std::vector<knight_path_t::stitch_t, std::allocator<knight_path_t::stitch_t> > >, knight_path_t::stitch_t const&)
+  [15] knight_path_t::k_getpath_t::get_path(int, int, int, int, int, int, knight_path_t::tour_path_t&) [53] knight_path_t::k_32_search_t::convert_board_path_to_list(knight_path_t::solution_t const&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [29] std::vector<knight_path_t::stitch_t, std::allocator<knight_path_t::stitch_t> >::operator=(std::vector<knight_path_t::stitch_t, std::allocator<knight_path_t::stitch_t> > const&)
+  [16] knight_path_t::k_getpath_t::get_path(int, int, int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [19] knight_path_t::k_sub_board_t::set_max_xy(int, int) [6] void std::vector<int, std::allocator<int> >::_M_insert_aux<int>(__gnu_cxx::__normal_iterator<int*, std::vector<int, std::allocator<int> > >, int&&)
+  [23] knight_path_t::k_32_search_t::get_stitches(int, int, std::vector<knight_path_t::stitch_t, std::allocator<knight_path_t::stitch_t> >&) [8] knight_path_t::get_cell_color(int, int) [33] std::vector<int, std::allocator<int> >::operator=(std::vector<int, std::allocator<int> > const&)
+  [38] knight_path_t::k_32_search_t::find_position(int, int, int&) [12] knight_path_t::get_color_name(knight_path_t::color_t) [34] std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*> std::move_backward<knight_path_t::k_tour_t::child_t>(std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t const&, knight_path_t::k_tour_t::child_t const*>, std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t const&, knight_path_t::k_tour_t::child_t const*>, std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>)
+  [24] knight_path_t::k_32_search_t::stitching_points(knight_path_t::sub_board_grid_t&, int, int, int, int) [20] knight_path_t::k_path_adapter_t::get_path(int, int, int, int, int, int, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&) [30] void std::__insertion_sort<std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*> >(std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>, std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>)
+  [25] knight_path_t::k_32_search_t::apply_valid_stitch(knight_path_t::sub_board_grid_t&, std::vector<knight_path_t::stitch_t, std::allocator<knight_path_t::stitch_t> > const&, int, int, int, int) [54] knight_path_t::k_tour_t::solveKTUtil(int, int, int, int, int, int, knight_path_t::solution_t&) [31] void std::__introsort_loop<std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>, long>(std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>, std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>, long)
+  [45] knight_path_t::k_32_search_t::find_complete_path(knight_path_t::sub_board_grid_t&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > const&, int, int, int, int, knight_path_t::k_path_adapter_t&, knight_path_t::node_t const&, knight_path_t::node_t const&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> >&, bool) [55] knight_path_t::k_tour_t::solveKT_new(int, int, int, int, knight_path_t::solution_t&, std::vector<knight_path_t::node_t, std::allocator<knight_path_t::node_t> > const&) [32] void std::__final_insertion_sort<std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*> >(std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>, std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>)
+  [46] knight_path_t::k_32_search_t::get_sub_board_conf(int, int, int, int, int&, int&) [56] knight_path_t::k_tour_t::print_solution(knight_path_t::solution_t const&, int, int) [11] void std::__unguarded_linear_insert<std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*> >(std::_Deque_iterator<knight_path_t::k_tour_t::child_t, knight_path_t::k_tour_t::child_t&, knight_path_t::k_tour_t::child_t*>)
+  [39] knight_path_t::k_32_search_t::get_sub_board_node(int, int, knight_path_t::node_t&, int, int) [57] knight_path_t::k_tour_t::reached_via_diagnal(knight_path_t::solution_t const&, int, int)
