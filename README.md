@@ -31,6 +31,8 @@ eg: $ ./level_5_sample_run.sh
 
 $bin/knight_long_path -a -s 0,0 -e 31,3
 
+Provide -d option to the 'knight_long_path' if prefered not to use pre-computed subboard paths.
+
 
 
 Notes:
