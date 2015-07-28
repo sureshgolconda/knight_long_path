@@ -14,6 +14,7 @@
 #include <fstream>
 #include <cstring>
 #include <cassert>
+#include <libgen.h> 
 
 #include "k_tour.H"
 #include "k_getpath.H"
