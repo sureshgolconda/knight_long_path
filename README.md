@@ -1,12 +1,15 @@
 ======================================================================
-		Longest uncrossed knight's path	on a 32x32 chess board
+		Longest knight's path on a 32x32 chess board
 ======================================================================
+Problem statement:
+------------------
+To find the longest path for a knight on a 32x32 chessboard from a given start to a given end point without visiting a cell more than once.
 
 Overview:
 ---------
-Present system tries to impelement algorithm for finding the longest knight's path on a 32x32 chess board (grid).
+Present system tries to impelement algorithm for above problem.
 
-- Present README.md gives a quick introduction to the overall system. 
+- README.md gives a quick introduction to the overall system. 
 - "docs/knight_longest_path_documentation.pdf" provides more code/implementaiton documentation (also docs/html/index.html) 
 - "docs/knight_longest_path.pdf" provides some quick overview into the solution.
 
@@ -32,7 +35,11 @@ $bin/knight_long_path -a -s 0,0 -e 31,3
 
 Provide -d option to the 'knight_long_path' program if you prefer not to use pre-computed subboard paths.
 
-
+Known troubleshooting:
+----------------------
+Problem: "make" is failing with following error: 
+      “cc1plus: error: unrecognized command line option "-std=c++0x" ”. 
+A solution: Need to upgrade g++ to version 4.7 or later
 
 Notes:
 ------
