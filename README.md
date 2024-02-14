@@ -1,6 +1,5 @@
-======================================================================
-		Longest knight's path on a 32x32 chess board
-======================================================================
+		Readme for Longest knight's path on a 32x32 chess board
+
 Problem statement:
 ------------------
 To find the longest path for a knight on a 32x32 chessboard from a given start to a given end point without visiting a cell more than once.
